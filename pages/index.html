@@ -11,41 +11,39 @@
 .wrapper{
     border:4px solid black;
     background:white;
+    /* REMOVED max-width so the page always stays 100% full width */
 }
+
 /* HEADER ĐỎ */
 .header{
     background:rgb(7, 105, 251);
-    height:70px;
+    min-height:70px; 
+    padding: 10px 0;
     border-bottom:3px solid black;
+    
+    /* ADDED THESE 3 LINES TO MAKE IT STICK TO THE TOP */
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Keeps the header floating above everything else */
 }
 .header-logo {
-    width: 100px; /* Adjust this width later to make your logo bigger/smaller */
+    width: 100px;
     height: auto;
-    max-height: 60px; /* Prevents the logo from expanding the header */
+    max-height: 60px;
     object-fit: contain;
 }
-/* SEARCH */
-.search{
-    height:40px;
-    background:white;
-}
-/* ICON */
-.icon{
-    width:40px;
-    height:40px;
-    background:#991b1b;
-}
+
 /* SUB-HEADER */
 .sub-header{
-    height:40px;
+    min-height:40px;
+    padding: 5px 0;
     border-bottom:3px solid black;
 }
-/* SUB-HEADER HOVER EFFECT */
 .sub-header a {
     transition: all 0.2s ease;
 }
 .sub-header a:hover {
-    color: rgb(7, 105, 251) !important; /* Blue text */
+    color: rgb(7, 105, 251) !important;
 }
 
 /* SIDEBAR */
@@ -53,52 +51,61 @@
     min-height:400px;
     border-right:3px solid black;
 }
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+}
+
 /* MENU ITEM */
 .menu {
     height: 50px;
     border-bottom: 2px solid black;
     display: flex;
-    align-items: center;      /* Vertically middle */
-    justify-content: center;  /* Horizontally center the block */
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.2s ease;
 }
-
-/* Force same indent while centered */
 .menu a {
     width: 140px; 
     text-align: left;
     transition: color 0.2s ease;
 }
-
-/* Hover effects */
 .menu:hover {
-    background-color: rgb(7, 105, 251); /* Blue background */
+    background-color: rgb(7, 105, 251);
+}
+.menu:hover a {
+    color: white !important;
 }
 
-.menu:hover a {
-    color: white !important; /* White text */
-}
 /* MAIN IMAGE */
 .main{
     background:#c7c7f2;
     min-height: 550px;
 }
+
+/* BANNER CAROUSEL */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
 .footer{
-    height:250px;
     border-top:3px solid black;
 }
-/* FOOTER HOVER EFFECT (For specific columns) */
 .footer-hover-link a {
     transition: all 0.2s ease;
 }
 .footer-hover-link a:hover {
-    color: rgb(7, 105, 251) !important; /* Blue text */
+    color: rgb(7, 105, 251) !important;
     text-decoration: underline !important;
 }
-/* FOOTER LOGOS (SHIPPING-PAYMENT) */
 .footer-logo {
-    width: 54px;   /* Exactly half of your 108px width */
-    height: auto;  /* Keeps the image from stretching weirdly */
+    width: 54px;
+    height: auto;
 }
 </style>
 </head>
@@ -107,17 +114,16 @@
 
 <div class="container-fluid wrapper p-0">
 
-<!-- HEADER -->
 <div class="header px-3">
-    <div class="row h-100 align-items-center justify-content-center gap-3 gap-md-4">
+    <div class="row align-items-center justify-content-center gap-2 m-0">
 
-        <div class="col-auto">
-            <a href="#">
+        <div class="col-12 col-md-auto text-center mb-2 mb-md-0">
+            <a href="index.html">
                 <img src="../assets/img/logo/logo.png" alt="logo" class="header-logo">
             </a>
         </div>
 
-        <div class="col-5 ms-3">
+        <div class="col-12 col-md-5 mb-2 mb-md-0">
             <form class="d-flex">
                 <input
                     class="form-control me-2"
@@ -133,7 +139,7 @@
             </form>
         </div>
 
-        <div class="col-auto d-flex align-items-center gap-3">
+        <div class="col-12 col-md-auto d-flex align-items-center justify-content-center gap-3">
             <a href="#" class="text-decoration-none text-white fw-semibold">
                 Tài khoản
             </a>
@@ -146,21 +152,20 @@
         </div>
     </div>
 </div>
-<!-- SUB HEADER -->
+
 <div class="sub-header d-flex align-items-center">
     <div class="container-fluid">
-        <div class="row text-center w-100">
-            <div class="col-3 menu-link"><a href="#" class="text-decoration-none text-dark">🏠︎ Trang chủ</a></div>
-            <div class="col-3 menu-link"><a href="#" class="text-decoration-none text-dark">📦 Sản phẩm</a></div>
-            <div class="col-3 menu-link"><a href="#" class="text-decoration-none text-dark">🏷️ Khuyến mãi</a></div>
-            <div class="col-3 menu-link"><a href="#" class="text-decoration-none text-dark">☎ Liên hệ</a></div>
+        <div class="row text-center w-100 m-0">
+            <div class="col-6 col-md-3 py-1 menu-link"><a href="#" class="text-decoration-none text-dark">🏠︎ Trang chủ</a></div>
+            <div class="col-6 col-md-3 py-1 menu-link"><a href="#" class="text-decoration-none text-dark">📦 Sản phẩm</a></div>
+            <div class="col-6 col-md-3 py-1 menu-link"><a href="#" class="text-decoration-none text-dark">🏷️ Khuyến mãi</a></div>
+            <div class="col-6 col-md-3 py-1 menu-link"><a href="#" class="text-decoration-none text-dark">☎ Liên hệ</a></div>
         </div>
     </div>
 </div>
-<!-- BODY -->
+
 <div class="row g-0">
-    <!-- SIDEBAR -->
-    <div class="col-3 sidebar">
+    <div class="col-12 col-md-3 sidebar">
         <div class="menu text-center"><a href="#" class="text-decoration-none text-dark">Router</a></div>
         <div class="menu text-center"><a href="#" class="text-decoration-none text-dark">Router Gaming</a></div>
         <div class="menu text-center"><a href="#" class="text-decoration-none text-dark">Router Phổ thông</a></div>
@@ -170,13 +175,11 @@
         <div class="menu text-center"><a href="#" class="text-decoration-none text-dark">Router WiFi 6</a></div>    
     </div>
 
-    <!-- MAIN -->
-   <div class="col-9 main p-3">
+    <div class="col-12 col-md-9 main p-3">
         <div class="container-fluid">
             <div class="row g-3">
                 <div class="col-12">
                 
-                    <!-- Sử dụng Carousel của Bootstrap để làm banner cho trang chủ -->
                     <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
                         
                         <div class="carousel-indicators">
@@ -186,19 +189,15 @@
                         </div>
 
                         <div class="carousel-inner rounded border border-dark border-2">
-                            
-                            <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="carousel-item active" data-bs-interval="3000">
                                 <img src="../assets/img/banner/banner_1.jpg" class="d-block w-100" alt="Banner 1">
                             </div>
-                            
-                            <div class="carousel-item" data-bs-interval="5000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="../assets/img/banner/banner_2.jpg" class="d-block w-100" alt="Banner 2">
                             </div>
-                            
-                            <div class="carousel-item" data-bs-interval="5000">
+                            <div class="carousel-item" data-bs-interval="3000">
                                 <img src="../assets/img/banner/banner_3.jpg" class="d-block w-100" alt="Banner 3">
                             </div>
-
                         </div>
 
                         <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
@@ -211,21 +210,16 @@
                         </button>
 
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
 </div>
-<!-- FOOTER -->
+
 <div class="footer bg-white py-5">
-
     <div class="container">
-
         <div class="row">
 
-            <!-- CỘT 1 -->
             <div class="col-md-2 col-6 mb-4">
                 <h6 class="fw-bold mb-3">VỀ TECHVN</h6>
                 <ul class="list-unstyled footer-list footer-hover-link">
@@ -235,7 +229,6 @@
                 </ul>
             </div>
  
-            <!-- CỘT 2 -->
             <div class="col-md-2 col-6 mb-4">
                 <h6 class="fw-bold mb-3">CHÍNH SÁCH</h6>
                 <ul class="list-unstyled footer-list footer-hover-link">
@@ -245,7 +238,6 @@
                 </ul>
             </div>
 
-            <!-- CỘT 3 -->
             <div class="col-md-3 col-6 mb-4">
                 <h6 class="fw-bold mb-3">THÔNG TIN</h6>
                 <ul class="list-unstyled footer-list footer-hover-link">
@@ -258,12 +250,10 @@
                 </ul>
             </div>
 
-            <!-- CỘT 4 -->
             <div class="col-md-3 col-6 mb-4">
                 <h6 class="fw-bold mb-3">
                     TỔNG ĐÀI HỖ TRỢ <br>(8:00 - 21:00)
                 </h6>
-
                 <ul class="list-unstyled footer-list">
                     <li>Mua hàng: <a href="tel:1900000x" class="text-decoration-none text-primary fw-bold">1900.000x</a></li>
                     <li>Bảo hành: <a href="tel:1900000x" class="text-decoration-none text-primary fw-bold">1900.000x</a></li>
@@ -272,10 +262,8 @@
                 </ul>
             </div>
 
-            <!-- CỘT 5 -->
             <div class="col-md-2 col-12 mb-4">
                 <h6 class="fw-bold mb-3">ĐƠN VỊ VẬN CHUYỂN</h6>
-
                 <div class="d-flex flex-wrap gap-2 mb-3">
                     <img src="../assets/img/ship_img/ship_1.png" alt="Ship" class="border rounded footer-logo">
                     <img src="../assets/img/ship_img/ship_2.png" alt="Ship" class="border rounded footer-logo">
@@ -283,7 +271,6 @@
                 </div>
 
                 <h6 class="fw-bold mb-3">THANH TOÁN</h6>
-
                 <div class="d-flex flex-wrap gap-2">
                     <img src="../assets/img/pay_img/pay_1.png" alt="Pay" class="border rounded footer-logo">
                     <img src="../assets/img/pay_img/pay_2.png" alt="Pay" class="border rounded footer-logo">
@@ -291,10 +278,9 @@
                     <img src="../assets/img/pay_img/pay_4.png" alt="Pay" class="border rounded footer-logo">
                 </div>
             </div>
+
         </div>
-
     </div>
-
 </div>
 
 </div>
