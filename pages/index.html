@@ -1,197 +1,278 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Main Page</title>
-<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHSTORE - Phần cứng mạng</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+
 </head>
 
 <body>
-
-<!-- Wrapper: Container chính bao quanh toàn bộ nội dung trang -->
-<div class="container-fluid wrapper p-0">
-
-<!-- Header: Phần đầu trang chứa logo, tìm kiếm và các link tài khoản -->
-<div class="header px-3">
-    <div class="row align-items-center justify-content-center gap-2 m-0">
-
-        <div class="col-12 col-md-auto text-center mb-2 mb-md-0">
-            <a href="index.html">
-                <img src="../assets/img/logo/logo.png" alt="logo" class="header-logo">
-            </a>
-        </div>
-
-        <div class="col-12 col-md-5 mb-2 mb-md-0">
-            <form class="d-flex">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Tìm kiếm sản phẩm..."
-                    aria-label="Search"
-                >
-                <button
-                    class="btn btn-dark"
-                    type="submit">
-                    🔍︎
-                </button>
-            </form>
-        </div>
-
-        <div class="col-12 col-md-auto d-flex align-items-center justify-content-center gap-3">
-            <a href="header/my-account.html" class="text-decoration-none text-white fw-semibold">
-                Tài khoản
-            </a>
-            <a href="header/cart.html" class="text-decoration-none text-white fw-semibold">
-                Giỏ hàng
-            </a>
-            <a href="header/support.html" class="text-decoration-none text-white fw-semibold">
-                Hỗ trợ
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- Sub-header: Menu chính với các link: Trang chủ, Sản phẩm, Khuyến mãi, Liên hệ -->
-<div class="sub-header d-flex align-items-center">
-    <div class="container-fluid">
-        <div class="row text-center w-100 m-0">
-            <div class="col-6 col-md-3 py-1 menu-link"><a href="index.html" class="text-decoration-none text-dark">🏠︎ Trang chủ</a></div>
-            <div class="col-6 col-md-3 py-1 menu-link"><a href="sub-header/products.html" class="text-decoration-none text-dark">📦 Sản phẩm</a></div>
-            <div class="col-6 col-md-3 py-1 menu-link"><a href="sub-header/promotions.html" class="text-decoration-none text-dark">🏷️ Khuyến mãi</a></div>
-            <div class="col-6 col-md-3 py-1 menu-link"><a href="sub-header/contact-us.html" class="text-decoration-none text-dark">☎ Liên hệ</a></div>
-        </div>
-    </div>
-</div>
-
-<!-- Main content area với sidebar và main section -->
-<div class="row g-0">
-    <!-- Sidebar: Menu bên trái để lọc các loại router -->
-    <div class="col-12 col-md-3 sidebar">
-        <div class="menu text-center"><a href="sidebar/router.html" class="text-decoration-none text-dark">Router</a></div>
-        <div class="menu text-center"><a href="sidebar/gaming-router.html" class="text-decoration-none text-dark">Router Gaming</a></div>
-        <div class="menu text-center"><a href="sidebar/standard-router.html" class="text-decoration-none text-dark">Router Phổ thông</a></div>
-        <div class="menu text-center"><a href="sidebar/wall-penetrating-router.html" class="text-decoration-none text-dark">Router Xuyên tường</a></div>
-        <div class="menu text-center"><a href="sidebar/mesh-router-pack.html" class="text-decoration-none text-dark">Router Mesh Pack</a></div>
-        <div class="menu text-center"><a href="sidebar/wifi-5-router.html" class="text-decoration-none text-dark">Router WiFi 5</a></div>
-        <div class="menu text-center"><a href="sidebar/wifi-6-router.html" class="text-decoration-none text-dark">Router WiFi 6</a></div>    
-    </div>
-
-    <!-- Main: Phần nội dung chính của trang, chứa banner carousel -->
-    <div class="col-12 col-md-9 main p-3">
+    <!-- HEADER : Navbar -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
         <div class="container-fluid">
-            <div class="row g-3">
-                <div class="col-12">
-                
-                    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
-                        
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        <div class="carousel-inner rounded border border-dark border-2">
-                            <div class="carousel-item active" data-bs-interval="3000">
-                                <img src="../assets/img/banner/banner_1.jpg" class="d-block w-100" alt="Banner 1">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="../assets/img/banner/banner_2.jpg" class="d-block w-100" alt="Banner 2">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="3000">
-                                <img src="../assets/img/banner/banner_3.jpg" class="d-block w-100" alt="Banner 3">
-                            </div>
-                        </div>
+            <div class="collapse navbar-collapse justify-content-center align-items-center" id="collapsibleNavbar">
+                <a class="navbar-brand" href="#">TECHSTORE</a>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <button class="btn rounded-3 btn-primary">
+                            <span class="navbar-toggler-icon"></span>
+                            Danh Mục
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </li>
 
-                    </div>
-                </div>
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <div class="input-group" style="width: 400px;">
+                                <input class="form-control me-2" type="search" placeholder="Bạn cần tìm gì?" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">🔍︎</button>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Về chúng tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giỏ hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-3" href="#" style="background-color: #0a54c4;"><i class="fa-solid fa-circle-user"></i> Đăng nhập</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-</div>
 
-<!-- Footer: Phần cuối trang chứa thông tin công ty, chính sách, liên hệ và thanh toán -->
-<div class="footer bg-white py-5">
-    <div class="container">
+        </div>
+    </nav>
+
+
+    <!-- BODY : Sidebar + Carousel -->
+    <div class="container bg-light p-0" style="margin-top: 90px;">
         <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="tech-sidebar">
 
-            <div class="col-md-2 col-6 mb-4">
-                <h6 class="fw-bold mb-3">VỀ TECHVN</h6>
-                <ul class="list-unstyled footer-list footer-hover-link">
-                    <li><a href="footer/introduction.html" class="text-decoration-none text-dark">Giới thiệu</a></li>
-                    <li><a href="footer/careers.html" class="text-decoration-none text-dark">Tuyển dụng</a></li>
-                    <li><a href="sub-header/contact-us.html" class="text-decoration-none text-dark">Liên hệ</a></li>
-                </ul>
-            </div>
- 
-            <div class="col-md-2 col-6 mb-4">
-                <h6 class="fw-bold mb-3">CHÍNH SÁCH</h6>
-                <ul class="list-unstyled footer-list footer-hover-link">
-                    <li><a href="footer/warranty.html" class="text-decoration-none text-dark">Bảo hành</a></li>
-                    <li><a href="footer/shipping.html" class="text-decoration-none text-dark">Giao hàng</a></li>
-                    <li><a href="footer/privacy-policy.html" class="text-decoration-none text-dark">Bảo mật</a></li>
-                </ul>
-            </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-header d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-network-wired"></i>
+                                <span class="fw-medium text-dark">Router</span>
+                            </div>
+                            <i class="fas fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <div class="sidebar-submenu">
+                            <ul class="list-unstyled m-0 pb-2">
+                                <li><a href="#" class="submenu-link">Tất cả</a></li>
+                                <li><a href="#" class="submenu-link">Router Gaming</a></li>
+                                <li><a href="#" class="submenu-link">Router Phổ thông</a></li>
+                                <li><a href="#" class="submenu-link">Router Xuyên tường</a></li>
+                                <li><a href="#" class="submenu-link">Router 6G</a></li>
+                                <li><a href="#" class="submenu-link">Router 5G</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <div class="col-md-3 col-6 mb-4">
-                <h6 class="fw-bold mb-3">THÔNG TIN</h6>
-                <ul class="list-unstyled footer-list footer-hover-link">
-                    <li><a href="footer/store-system.html" class="text-decoration-none text-dark">Hệ thống cửa hàng</a></li>
-                    <li><a href="footer/shopping-guide.html" class="text-decoration-none text-dark">Hướng dẫn mua hàng</a></li>
-                    <li><a href="footer/payment.html" class="text-decoration-none text-dark">Thanh toán</a></li>
-                    <li><a href="footer/installment-plans.html" class="text-decoration-none text-dark">Trả góp</a></li>
-                    <li><a href="footer/warranty-lookup.html" class="text-decoration-none text-dark">Tra cứu bảo hành</a></li>
-                    <li><a href="footer/pc-builder.html" class="text-decoration-none text-dark">Build PC</a></li>
-                </ul>
-            </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-header d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-solar-panel"></i>
+                                <span class="fw-medium text-dark">USB Thu sóng - Card mạng</span>
+                            </div>
+                            <i class="fas fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <div class="sidebar-submenu">
+                            <ul class="list-unstyled m-0 pb-2">
+                                <li><a href="#" class="submenu-link">Tất cả</a></li>
+                                <li><a href="#" class="submenu-link">USB WiFi</a></li>
+                                <li><a href="#" class="submenu-link">Card Mạng</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <div class="col-md-3 col-6 mb-4">
-                <h6 class="fw-bold mb-3">
-                    TỔNG ĐÀI HỖ TRỢ <br>(8:00 - 21:00)
-                </h6>
-                <ul class="list-unstyled footer-list">
-                    <li>Mua hàng: <a href="tel:1900000x" class="text-decoration-none text-primary fw-bold">1900.000x</a></li>
-                    <li>Bảo hành: <a href="tel:1900000x" class="text-decoration-none text-primary fw-bold">1900.000x</a></li>
-                    <li>Khiếu nại: <a href="tel:1800000x" class="text-decoration-none text-primary fw-bold">1800.000x</a></li>
-                    <li>Email: <a href="mailto:cskh@techvn.com" class="text-decoration-none text-dark">cskh@techvn.com</a></li>
-                </ul>
-            </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-header d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span class="fw-medium text-dark">Vật tư & Phụ kiện mạng</span>
+                            </div>
+                            <i class="fas fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <div class="sidebar-submenu">
+                            <ul class="list-unstyled m-0 pb-2">
+                                <li><a href="#" class="submenu-link">Tất cả</a></li>
+                                <li><a href="#" class="submenu-link">Dây cáp mạng</a></li>
+                                <li><a href="#" class="submenu-link">Đầu mạng & Dụng cụ</a></li>
+                                <li><a href="#" class="submenu-link">Hạ tầng mạng</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-            <div class="col-md-2 col-12 mb-4">
-                <h6 class="fw-bold mb-3">ĐƠN VỊ VẬN CHUYỂN</h6>
-                <div class="d-flex flex-wrap gap-2 mb-3">
-                    <img src="../assets/img/ship_img/ship_1.png" alt="Ship" class="border rounded footer-logo">
-                    <img src="../assets/img/ship_img/ship_2.png" alt="Ship" class="border rounded footer-logo">
-                    <img src="../assets/img/ship_img/ship_3.png" alt="Ship" class="border rounded footer-logo">
+                    <div class="sidebar-item">
+                        <div class="sidebar-header d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-server"></i>
+                                <span class="fw-medium text-dark">Thiết bị lưu trữ mạng</span>
+                            </div>
+                            <i class="fas fa-chevron-right arrow-icon"></i>
+                        </div>
+                        <div class="sidebar-submenu">
+                            <ul class="list-unstyled m-0 pb-2">
+                                <li><a href="#" class="submenu-link">Tất cả</a></li>
+                                <li><a href="#" class="submenu-link">NAS Gia đình</a></li>
+                                <li><a href="#" class="submenu-link">NAS Doanh nghiệp</a></li>
+                                <li><a href="#" class="submenu-link">Ổ cứng chuyên dụng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-
-                <h6 class="fw-bold mb-3">THANH TOÁN</h6>
-                <div class="d-flex flex-wrap gap-2">
-                    <img src="../assets/img/pay_img/pay_1.png" alt="Pay" class="border rounded footer-logo">
-                    <img src="../assets/img/pay_img/pay_2.png" alt="Pay" class="border rounded footer-logo">
-                    <img src="../assets/img/pay_img/pay_3.png" alt="Pay" class="border rounded footer-logo">
-                    <img src="../assets/img/pay_img/pay_4.png" alt="Pay" class="border rounded footer-logo">
-                </div>
             </div>
 
+
+            <!-- Carousel -->
+            <div class="col-md-9">
+                <div id="carousel-index-page" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-index-page" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-index-page" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-index-page" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/banner/banner_1.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/banner/banner_2.jpg" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/banner/banner_3.jpg" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-</div>
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="bg-light p-3 mt-4">
+        <div class="d-flex ms-5 ps-5 gap-5">
+            <div class="d-flex flex-column">
+                <p style="font-weight: bold;">VỀ TECHSTORE</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Giới thiệu</a></li>
+                    <li><a href="#" class="footer-link">Tuyển dụng</a></li>
+                    <li><a href="#" class="footer-link">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column">
+                <p style="font-weight: bold;">CHÍNH SÁCH</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Chính sách bảo hành</a></li>
+                    <li><a href="#" class="footer-link">Chính sách giao hàng</a></li>
+                    <li><a href="#" class="footer-link">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column">
+                <p style="font-weight: bold;">THÔNG TIN</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Hệ thống cửa hàng</a></li>
+                    <li><a href="#" class="footer-link">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#" class="footer-link">Hướng dẫn thanh toán</a></li>
+                    <li><a href="#" class="footer-link">Hướng dẫn trả góp</a></li>
+                    <li><a href="#" class="footer-link">Tra cứu địa chỉ bảo hánh</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column">
+                <p style="font-weight: bold;">TỔNG ĐÀI HỖ TRỢ <span style="font-weight: lighter;">(8:00 - 21:00)</span></p>
+                <ul class="list-unstyled">
+                    <li>Mua hàng:
+                        <a href="tel:1900.0000" class="text-decoration-none">1900.0000</a>
+                    </li>
+                    <li>Bảo hành:
+                        <a href="tel:1900.0001" class="text-decoration-none">1900.0001</a>
+                    </li>
+                    <li>Khiếu nại:
+                        <a href="tel:1900.0002" class="text-decoration-none">1900.0002</a>
+                    </li>
+                    <li>Email:
+                        <a href="tel:1900.0003" class="text-decoration-none">1900.0003</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex flex-column">
+                <p style="font-weight: bold;">ĐƠN VỊ VẬN CHUYỂN</p>
+                <div class="d-flex">
+                    <img src="../assets/img/ship_img/ship_1.png" alt="ship-icon-1">
+                    <img src="../assets/img/ship_img/ship_2.png" alt="ship-icon-2">
+                    <img src="../assets/img/ship_img/ship_3.png" alt="ship-icon-3">
+                </div>
+
+                <p style="font-weight: bold;">CÁCH THỨC THANH TOÁN</p>
+                <div class="d-flex">
+                    <img src="../assets/img/pay_img/pay_1.png" alt="payment-icon-1">
+                    <img src="../assets/img/pay_img/pay_2.png" alt="payment-icon-2">
+                    <img src="../assets/img/pay_img/pay_3.png" alt="payment-icon-3">
+                    <img src="../assets/img/pay_img/pay_4.png" alt="payment-icon-4">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="d-flex mt-4 ms-5 ps-5 gap-3">
+            <h4>Kết nối với chúng tôi</h4>
+            <a href="https://github.com/Huylorddd/digital-store" target="_blank"><img src="../assets/img/icons/facebook.png" alt="facebook-icon" style="width: 35px"></a>
+            <a href="https://github.com/Huylorddd/digital-store" target="_blank"><img src="../assets/img/icons/github.png" alt="github-icon" style="width: 35px"></a>
+            <a href="https://github.com/Huylorddd/digital-store" target="_blank"><img src="../assets/img/icons/youtube.png" alt="youtube-icon" style="width: 35px"></a>
+            <a href="https://github.com/Huylorddd/digital-store" target="_blank"><img src="../assets/img/icons/twitter.png" alt="twitter-icon" style="width: 35px"></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Bắt sự kiện click cho tất cả các Header
+            const sidebarHeaders = document.querySelectorAll('.sidebar-header');
+
+            sidebarHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const currentItem = this.parentElement;
+
+                    // Kiểm tra xem mục đang bấm có phải đang mở không
+                    const isActive = currentItem.classList.contains('active');
+
+                    // Thu gọn TẤT CẢ các mục lại (Chỉ cho phép mở 1 mục cùng lúc)
+                    document.querySelectorAll('.sidebar-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    // Nếu mục vừa bấm chưa mở, thì mở nó ra
+                    if (!isActive) {
+                        currentItem.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
+
 </html>
