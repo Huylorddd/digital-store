@@ -13,7 +13,83 @@
 
 </head>
 
+
+<!-- Signup / Login Modal -->
+<div class="modal fade" id="authModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">Tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body">
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" id="authTab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#loginTab">
+                            Đăng nhập
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#signupTab">
+                            Đăng ký
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-3">
+
+                    <!-- LOGIN -->
+                    <div class="tab-pane fade show active" id="loginTab">
+                        <form>
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Nhập email">
+                            </div>
+                            <div class="mb-3">
+                                <label>Mật khẩu</label>
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                            </div>
+                            <button class="btn btn-primary w-100">Đăng nhập</button>
+                        </form>
+                    </div>
+
+                    <!-- SIGN UP -->
+                    <div class="tab-pane fade" id="signupTab">
+                        <form>
+                            <div class="mb-3">
+                                <label>Họ tên</label>
+                                <input type="text" class="form-control" placeholder="Nhập họ tên">
+                            </div>
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Nhập email">
+                            </div>
+                            <div class="mb-3">
+                                <label>Mật khẩu</label>
+                                <input type="password" class="form-control" placeholder="Tạo mật khẩu">
+                            </div>
+                            <button class="btn btn-success w-100">Đăng ký</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 <body>
+    <!-- Mask lại phần sidebar cho nút danh mục nằm trên navbar -->
+    <div id="overlay"></div>
+
     <!-- HEADER : Navbar -->
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
         <div class="container-fluid">
@@ -22,11 +98,11 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-center align-items-center" id="collapsibleNavbar">
-                <a class="navbar-brand" href="#">TECHSTORE</a>
+                <a class="navbar-brand" href="index.html">TECHSTORE</a>
 
                 <ul class="navbar-nav gap-2">
                     <li class="nav-item">
-                        <button class="btn rounded-3 btn-primary">
+                        <button id="btnMenu" class="btn rounded-3 btn-primary">
                             <span class="navbar-toggler-icon"></span>
                             Danh Mục
                         </button>
@@ -43,7 +119,10 @@
                     <li class="nav-item"><a class="nav-link" href="#">Về chúng tôi</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Giỏ hàng</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-3" href="#" style="background-color: #0a54c4;"><i class="fa-solid fa-circle-user"></i> Đăng nhập</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-3" href="#" data-bs-toggle="modal" data-bs-target="#authModal" style="background-color: #0a54c4;">
+                            <i class="fa-solid fa-circle-user"></i> Đăng nhập</a>
+                    </li>
                 </ul>
             </div>
 
@@ -270,6 +349,19 @@
                     }
                 });
             });
+        });
+
+
+        const btnMenu = document.getElementById("btnMenu");
+        const overlay = document.getElementById("overlay");
+
+        btnMenu.addEventListener("click", function() {
+            overlay.classList.toggle("active");
+        });
+
+        // Click vào vùng tối để tắt
+        overlay.addEventListener("click", function() {
+            overlay.classList.remove("active");
         });
     </script>
 
