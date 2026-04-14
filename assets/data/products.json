@@ -1,0 +1,30 @@
+[
+  {
+    "id": "R001",
+    "name": "Router Wifi 6 ASUS RT-AX82U V2",
+    "price": "3.590.000đ",
+    "image": "https://via.placeholder.com/300x200?text=ASUS+Router",
+    "tags": ["router", "router-gaming", "router-6g"]
+  },
+  {
+    "id": "R002",
+    "name": "Router Wifi TP-Link Archer C6",
+    "price": "750.000đ",
+    "image": "https://via.placeholder.com/300x200?text=TP-Link+Router",
+    "tags": ["router", "router-popular"]
+  },
+  {
+    "id": "U001",
+    "name": "USB Thu Sóng WiFi TP-Link T2U Plus",
+    "price": "290.000đ",
+    "image": "https://via.placeholder.com/300x200?text=USB+WiFi",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+  {
+    "id": "N001",
+    "name": "NAS Synology DiskStation DS220j",
+    "price": "4.990.000đ",
+    "image": "https://via.placeholder.com/300x200?text=NAS+Synology",
+    "tags": ["network-storage", "nas-home"]
+  }
+]

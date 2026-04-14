@@ -1,3 +1,4 @@
+/* SETUP */ 
 @font-face {
     font-family: 'RubikGlitch';
     src: url('../fonts/RubikGlitch-Regular.ttf') format('truetype');
@@ -5,8 +6,16 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #e0e0e0;
+    min-height: 100vh;  /* chiếm 100% màn hình người dùng */
+    margin: 0;
 }
 
 .navbar-brand {
@@ -14,94 +23,71 @@ body {
     font-size: xx-large;
 }
 
+
+
+
+
+/*  CHỨC NĂNG: SIDEBAR  */
 .tech-sidebar {
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    /* Đổ bóng mềm mại */
     border: 1px solid #ebebeb;
 }
-
 .sidebar-item {
     border-bottom: 1px solid #f0f0f0;
 }
-
 .sidebar-item:last-child {
     border-bottom: none;
 }
-
-
 /* Header của mỗi mục */
-
 .sidebar-header {
     cursor: pointer;
     transition: background-color 0.2s ease;
     user-select: none;
 }
-
 .sidebar-header:hover {
     background-color: #f8f9fa;
 }
-
 .sidebar-icon {
     width: 26px;
     text-align: center;
     color: #6c757d;
-    /* Màu xám chuyên nghiệp */
 }
-
 .arrow-icon {
     font-size: 0.75rem;
     color: #adb5bd;
     transition: transform 0.3s ease;
 }
-
-
 /* Trạng thái Active (Đang mở) */
-
 .sidebar-item.active .sidebar-header {
     background-color: #f0f4ff;
-    /* Nền xanh nhạt */
 }
-
 .sidebar-item.active .sidebar-header .fw-medium {
     color: #0a54c4;
     font-weight: 600 !important;
 }
-
 .sidebar-item.active .sidebar-icon,
 .sidebar-item.active .arrow-icon {
     color: #0a54c4;
-    /* Đổi icon sang màu xanh của thương hiệu */
 }
-
 .sidebar-item.active .arrow-icon {
-    transform: rotate(90deg);
-    /* Xoay mũi tên */
+    transform: rotate(90deg); /* Xoay mũi tên */
 }
-
-
 /* Menu con */
-
 .sidebar-submenu {
     display: none;
     background-color: #fff;
     border-left: 3px solid #0a54c4;
-    /* Điểm nhấn xanh bên trái */
 }
-
 .sidebar-item.active .sidebar-submenu {
     display: block;
 }
-
-
 /* Link trong menu con */
-
 .submenu-link {
     display: block;
     padding: 10px 15px 10px 48px;
-    /* Căn chỉnh thụt lề chuẩn */
     color: #495057;
     text-decoration: none;
     font-size: 0.9rem;
@@ -112,12 +98,31 @@ body {
     color: #0a54c4;
     background-color: #f8f9fa;
     padding-left: 54px;
-    /* Hiệu ứng trượt nhẹ sang phải cực "Pro" */
+}
+/* Giao diện Sidebar khi ở chế độ ẩn/hiện (dùng cho trang không có Sidebar cố định) */
+.sidebar-drawer {
+    position: fixed;
+    top: 100px;
+    left: -320px; /* Giấu nó ra ngoài rìa trái màn hình */
+    width: 300px;
+    height: 100vh;
+
+    z-index: 1050; /* Cao hơn cả overlay */
+    background: white;
+    transition: left 0.3s ease-in-out;
+    border-radius: 0;
+    overflow-y: auto;
+}
+
+/* Khi có class .active thì nó trượt vào trong màn hình */
+.sidebar-drawer.active {
+    left: 0; 
 }
 
 
-/* Link con trong phần footer */
 
+
+/* Link con trong phần footer */
 .footer-link {
     color: rgb(78, 78, 78);
     text-decoration: none;
@@ -129,8 +134,10 @@ body {
 }
 
 
-/* Overlay nền tối */
 
+
+
+/* Overlay nền tối cho nút 'Danh mục' */
 #overlay {
     position: fixed;
     top: 0;
@@ -141,17 +148,9 @@ body {
     z-index: 998;
     display: none;
 }
-
-
-/* Khi active thì hiện */
-
 #overlay.active {
     display: block;
 }
-
-
-/* Sidebar nổi lên trên overlay */
-
 .tech-sidebar {
     position: relative;
     z-index: 999;
