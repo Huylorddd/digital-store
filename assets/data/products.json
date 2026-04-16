@@ -1,9 +1,26 @@
 [
   {
+  "id": "U002",
+  "name": "Card WiFi Asus AX3000",
+  "price": "1.250.000đ",
+  "image": "../img/asus-ax3000.png",
+  "tags": ["card-wifi"],
+  "detailedSpecs": [
+    { "label": "Chuẩn mạng", "value": "IEEE 802.11 ax, Bluetooth® 5.0" },
+    { "label": "Phân khúc sản phẩm", "value": "AX 3000 (2402Mbps+574Mbps)" },
+    { "label": "Bluetooth", "value": "5.0" },
+    { "label": "Tốc độ dữ liệu", "value": "802.11a : 6,9,12,18,24,36,48,54 Mbps<br>802.11b : 1, 2, 5.5, 11 Mbps<br>802.11g : 6,9,12,18,24,36,48,54 Mbps<br>802.11n : tối đa 300 Mbps<br>802.11ac (5GHz) : tối đa 1733 Mbps<br>802.11ax (2.4GHz) : tối đa 574 Mbps<br>802.11ax (5GHz) : tối đa 2402 Mbps" },
+    { "label": "Tần số hoạt động", "value": "2.4 GHz / 5 GHz" },
+    { "label": "Khối lượng", "value": "80 g (Chỉ riêng thiết bị)" },
+    { "label": "Hệ điều hành hỗ trợ", "value": "Windows® 10 64-bit<br>Linux" },
+    { "label": "Ghi chú", "value": "Trình điều khiển Linux Driver: hỗ trợ kernel 5.1+" }
+  ]
+  },
+  {
     "id": "R001",
     "name": "Router Wifi 6 ASUS RT-AX82U V2",
     "price": "3.590.000đ",
-    "image": "https://via.placeholder.com/300x200?text=ASUS+Router",
+    "image": "../../assets/img/banner/banner_1.jpg",
     "tags": ["router", "router-gaming", "router-6g"]
   },
   {
