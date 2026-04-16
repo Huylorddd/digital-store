@@ -3,8 +3,8 @@
  * Nhiệm vụ: Tải dữ liệu JSON, xử lý lọc (theo tag hoặc tìm kiếm) và render giao diện sản phẩm.
  */
 
-document.addEventListener("DOMContentLoaded", async function() {
-    
+document.addEventListener("DOMContentLoaded", async function () {
+
     // --- 1. ĐỌC THAM SỐ TỪ URL ---
     const urlParams = new URLSearchParams(window.location.search);
     const categoryFilter = urlParams.get('category'); // Vd: ?category=router
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         // --- 2. GỌI DỮ LIỆU TỪ DATABASE (JSON) ---
         const response = await fetch('../assets/data/products.json');
         const allProducts = await response.json();
-        
+
         let productsToShow = allProducts; // Mặc định là hiện tất cả
 
         // --- 3. LOGIC LỌC SẢN PHẨM ---
@@ -73,5 +73,27 @@ document.addEventListener("DOMContentLoaded", async function() {
             // Bơm thẻ HTML vừa tạo vào thùng chứa
             productContainer.innerHTML += productHTML;
         });
+
+        // Gán sự kiện cho tất cả nút "Thêm vào giỏ"
+        document.querySelectorAll('.btn-outline-primary').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                addToCart(products[index]);
+            });
+        });
     }
 });
+
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Kiểm tra xem sản phẩm đã có trong giỏ chưa
+    const existingProduct = cart.find(item => item.id === product.id);
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`Đã thêm ${product.name} vào giỏ hàng!`);
+}

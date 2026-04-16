@@ -46,7 +46,7 @@
 
                     <!-- LOGIN -->
                     <div class="tab-pane fade show active" id="loginTab">
-                        <form>
+                        <form id="loginForm">
                             <div class="mb-3">
                                 <label>Email</label>
                                 <input type="email" class="form-control" placeholder="Nhập email">
@@ -209,9 +209,26 @@
         <div class="row">
             
             <div class="col-12 p-5">
-                <h2>Giỏ hàng của bạn</h2>
+                <h2 class="mb-4"><i class="fa-solid fa-cart-shopping text-primary"></i> Giỏ hàng của bạn</h2>
+    
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="cartList" class="bg-white rounded shadow-sm p-3">
+                        </div>
+                    </div>
 
-
+                    <div class="col-lg-4">
+                        <div class="bg-white rounded shadow-sm p-3">
+                            <h5 class="border-bottom pb-2">Tạm tính</h5>
+                            <div class="d-flex justify-content-between my-3">
+                                <span>Tổng tiền:</span>
+                                <span id="totalPrice" class="fw-bold text-danger fs-5">0đ</span>
+                            </div>
+                            <button id="btnCheckout" class="btn btn-primary w-100 py-2 fw-bold">THANH TOÁN NGAY</button>
+                            <a href="products.html" class="btn btn-outline-secondary w-100 mt-2">Tiếp tục mua sắm</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -302,6 +319,7 @@
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/cart.js"></script>
 
 </body>
 

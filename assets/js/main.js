@@ -3,13 +3,13 @@
  * Nhiệm vụ: Xử lý các tương tác UI dùng chung cho toàn bộ website (Header, Sidebar, Overlay...)
  */
 
-document.addEventListener("DOMContentLoaded", function() {
-    
+document.addEventListener("DOMContentLoaded", function () {
+
     // --- 1. XỬ LÝ HIỆU ỨNG ACCORDION CHO SIDEBAR (Đóng/Mở danh mục) ---
     const sidebarHeaders = document.querySelectorAll('.sidebar-header');
 
     sidebarHeaders.forEach(header => {
-        header.addEventListener('click', function() {
+        header.addEventListener('click', function () {
             const currentItem = this.parentElement;
             const isActive = currentItem.classList.contains('active');
 
@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Kiểm tra xem các phần tử có tồn tại trên trang không để tránh lỗi
     if (btnMenu && overlay) {
-        btnMenu.addEventListener("click", function() {
+        btnMenu.addEventListener("click", function () {
             overlay.classList.toggle("active");
             if (mobileSidebar) mobileSidebar.classList.toggle("active");
         });
 
         // Click vào vùng tối để tắt cả menu và overlay
-        overlay.addEventListener("click", function() {
+        overlay.addEventListener("click", function () {
             overlay.classList.remove("active");
             if (mobileSidebar) mobileSidebar.classList.remove("active");
         });
