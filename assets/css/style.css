@@ -99,22 +99,26 @@ body {
     background-color: #f8f9fa;
     padding-left: 54px;
 }
-/* Giao diện Sidebar khi ở chế độ ẩn/hiện (dùng cho trang không có Sidebar cố định) */
-.sidebar-drawer {
-    position: fixed;
-    top: 100px;
-    left: -320px; /* Giấu nó ra ngoài rìa trái màn hình */
-    width: 300px;
-    height: 100vh;
 
-    z-index: 1050; /* Cao hơn cả overlay */
+.sidebar-drawer {
+    position: fixed !important; 
+    top: 90px;
+    height: calc(100vh - 90px);
+    width: 350px; 
+    min-width: 350px;
+    left: -370px; 
+    z-index: 1050;
     background: white;
     transition: left 0.3s ease-in-out;
     border-radius: 0;
     overflow-y: auto;
+    box-sizing: border-box; 
 }
 
-/* Khi có class .active thì nó trượt vào trong màn hình */
+.sidebar-drawer .sidebar-item {
+    width: 100%;
+}
+
 .sidebar-drawer.active {
     left: 0; 
 }
