@@ -1,47 +1,324 @@
 [
-  {
-  "id": "U002",
-  "name": "Card WiFi Asus AX3000",
-  "price": "1.250.000đ",
-  "image": "../img/asus-ax3000.png",
-  "tags": ["card-wifi"],
-  "detailedSpecs": [
-    { "label": "Chuẩn mạng", "value": "IEEE 802.11 ax, Bluetooth® 5.0" },
-    { "label": "Phân khúc sản phẩm", "value": "AX 3000 (2402Mbps+574Mbps)" },
-    { "label": "Bluetooth", "value": "5.0" },
-    { "label": "Tốc độ dữ liệu", "value": "802.11a : 6,9,12,18,24,36,48,54 Mbps<br>802.11b : 1, 2, 5.5, 11 Mbps<br>802.11g : 6,9,12,18,24,36,48,54 Mbps<br>802.11n : tối đa 300 Mbps<br>802.11ac (5GHz) : tối đa 1733 Mbps<br>802.11ax (2.4GHz) : tối đa 574 Mbps<br>802.11ax (5GHz) : tối đa 2402 Mbps" },
-    { "label": "Tần số hoạt động", "value": "2.4 GHz / 5 GHz" },
-    { "label": "Khối lượng", "value": "80 g (Chỉ riêng thiết bị)" },
-    { "label": "Hệ điều hành hỗ trợ", "value": "Windows® 10 64-bit<br>Linux" },
-    { "label": "Ghi chú", "value": "Trình điều khiển Linux Driver: hỗ trợ kernel 5.1+" }
-  ]
-  },
+
   {
     "id": "R001",
     "name": "Router Wifi 6 ASUS RT-AX82U V2",
-    "price": "3.590.000đ",
-    "image": "../../assets/img/banner/banner_1.jpg",
+    "price": "5.300.000đ",
+    "image": "../../assets/img/product/R001.jpg",
     "tags": ["router", "router-gaming", "router-6g"]
   },
   {
     "id": "R002",
     "name": "Router Wifi TP-Link Archer C6",
     "price": "750.000đ",
-    "image": "https://via.placeholder.com/300x200?text=TP-Link+Router",
-    "tags": ["router", "router-popular"]
+    "image": "../../assets/img/product/R002.jpg",
+    "tags": ["router", "router-popular","router-gaming","router-6g","router-5g"]
+  },
+    {
+    "id": "R003",
+    "name": "Bộ phát wifi LigoWave Infinity NFT",
+    "price": "2.495.000đ",
+    "image": "../../assets/img/product/R003.jpg",
+    "tags": ["router", "router-popular","router-wall"]
   },
   {
-    "id": "U001",
+    "id": "R004",
+    "name": "Bộ phát wifi LigoWave Infinity NFT",
+    "price": "2.495.000đ",
+    "image": "../../assets/img/product/R004.jpg",
+    "tags": ["router", "router-popular","router-wall"]
+  },
+  {
+    "id": "R005",
+    "name": "Bộ phát wifi UniFi NanoHD (UAP-nanoHD)",
+    "price": "5.500.000đ",
+    "image": "../../assets/img/product/R005.jpg",
+    "tags": ["router", "router-popular","router-5g","router-wall"]
+  },
+  {
+    "id": "R006",
+    "name": "Bộ phát wifi UniFi U6 Pro (U6-Pro)",
+    "price":"5.600.000đ",
+    "image":"../../assets/img/product/R006.jpg",
+    "tags":["router","router-popular","router-6g","router-wall"]
+  },
+
+   {
+    "id": "R007",
+    "name": "Thiết bị cân bằng tải Router Draytek Vigor 2926 plus",
+    "price":"3.490.000đ",
+    "image":"../../assets/img/product/R007.jpg",
+    "tags":["router","router-popular","router-wall"]
+  },
+  {
+    "id": "R008",
+    "name": "Thiết bị cân bằng tải Router Draytek Vigor 2962",
+    "price":"8.550.000đ",
+    "image":"../../assets/img/product/R008.jpg",
+    "tags":["router","router-popular","router-wall"]
+  },
+  {
+    "id": "R009",
+    "name": "Thiết bị cân bằng tải Router Draytek Vigor 2927",
+    "price":"8.550.000đ",
+    "image":"../../assets/img/product/R009.jpg",
+    "tags":["router","router-popular"]
+  },
+  {
+    "id": "R010",
+    "name": "Thiết bị cân bằng tải Router UniFi Dream Machine Pro (UDM-PRO), 9 Port Gigabit Ethernet, 2 Port SFP+",
+    "price":"14.738.000đ",
+    "image":"../../assets/img/product/R010.jpg",
+    "tags":["router","router-popular"]
+  },
+  {
+    "id": "R011",
+    "name": "Thiết bị cân bằng tải Router UniFi Dream Machine Special Edition (UDM-SE)",
+    "price":"18.919.000đ",
+    "image":"../../assets/img/product/R011.jpg",
+    "tags":["router","router-popular"]
+  },
+  {
+    "id": "R012",
+    "name": "Thiết bị cân bằng tải Router UniFi Security Gateway Pro (USG-Pro-4)",
+    "price":"16.995.000đ",
+    "image":"../../assets/img/product/R012.jpg",
+    "tags":["router","router-wall"]
+  },
+  {
+    "id": "R013",
+    "name": "Bộ phát wifi ASUS ROG Rapture GT-BE98 Pro Wireless Quad-Band Multi-Gig Gaming Router (1001)",
+    "price": "32.000.000đ",
+    "image": "../../assets/img/product/R013.jpg",
+    "tags": ["router", "router-gaming", "router-6g", "router-5g"]
+  },
+  {
+    "id": "R014",
+    "name": "Bộ phát wifi ASUS ROG Rapture  GT-BE19000AI Tri-band Gaming Router, WiFi 7 802.11be Dual 10G",
+    "price": "44.500.000đ",
+    "image": "../../assets/img/product/R014.jpg",
+    "tags": ["router", "router-gaming", "router-6g"]
+  },
+
+
+
+  {
+    "id": "NSu_CN001",
+    "name": "Cáp mạng bấm sẵn Cat6 UTP dài 20m Ugreen 11206 màu xanh dương",
+    "price":"180.000đ",
+    "image":"../../assets/img/product/NSu_CN001.jpg",
+    "tags":["network-supplies","cable-network"]
+  },
+  {
+    "id": "NSu_CN002",
+    "name": "Cáp mạng Tốc Độ Cao SFTP Cat8 VENTION IKK dài 20m (40Gbps/2000MHz)",
+    "price":"442.000đ",
+    "image":"../../assets/img/product/NSu_CN002.jpg",
+    "tags":["network-supplies","cable-network"  ]
+  },
+  {
+    "id": "NSu_CN003",
+    "name": "Cáp mạng Cat8 SFTP VENTION IKA 1m (40Gbps)",
+    "price":"60.000đ",
+    "image":"../../assets/img/product/NSu_CN003.jpg",
+    "tags":["network-supplies","cable-network"  ]
+  },
+    {
+    "id": "NSu_CN004",
+    "name": "Cáp mạng  LAN Cat.6A SFTP VENTION VPC6SSTP 1m (10Gbps)",
+    "price":"60.000đ",
+    "image":"../../assets/img/product/NSu_CN004.jpg",
+    "tags":["network-supplies","cable-network"  ]
+  },
+    {
+    "id": "NSu_CN005",
+    "name": "Cáp mạng LAN Flat Cat.7 VENTION ICA 1m (Flat Cable, 10Gbps)",
+    "price":"51.000đ",
+    "image":"../../assets/img/product/NSu_CN005.jpg",
+    "tags":["network-supplies","cable-network"  ]
+  },
+
+
+  {
+    "id": "NSu_NI001",
+    "name": "Ubiquiti UniFi Switch Pro 24 PoE (USW-Pro-24-PoE)",
+    "price":"23.122.000đ",
+    "image":"../../assets/img/product/NSu_NI001.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+  {
+    "id": "NSu_NI002",
+    "name": "Switch Unifi 8 Port PoE Ultra 210W (USW-Ultra-210W)",
+    "price":"8.640.000đ",
+    "image":"../../assets/img/product/NSu_NI002.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+  {
+    "id": "NSu_NI003",
+    "name": "Thiết bị chuyển mạch Ubiquiti UniFi Switch 24 (USW-24)",
+    "price":"7.350.000đ",
+    "image":"../../assets/img/product/NSu_NI003.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+  {
+    "id": "NSu_NI004",
+    "name": "Ubiquiti UniFi Switch Pro 48 (USW-Pro-48)",
+    "price":"18.152.000đ",
+    "image":"../../assets/img/product/NSu_NI004.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+  {
+    "id": "NSu_NI005",
+    "name": "Thiết bị tường lửa RUIJIE RG-WALL 1600-M5100 | Hàng chính hãng",
+    "price":"41.250.000đ",
+    "image":"../../assets/img/product/NSu_NI005.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+  {
+    "id": "NSu_NI006",
+    "name": "Thiết bị tường lửa Firewall Fortinet FortiGate 60F (FG-60F-BDL-950-12), Thiết bị tường lửa cho văn phòng, doanh nghiệp 25 người dùng",
+    "price":"27.950.000đ",
+    "image":"../../assets/img/product/NSu_NI006.jpg",
+    "tags":["network-supplies","network-infrastructure"]
+  },
+
+
+
+
+  {
+    "id": "NSu_NC001",
+    "name": "Hạt mạng RJ45 Cat6/Cat6a Ugreen 60558",
+    "price":"3.000đ",
+    "image":"../../assets/img/product/NSu_NC001.jpg",
+    "tags":["network-supplies","network-connector"]
+  },
+  {
+    "id": "NSu_NC002",
+    "name": "Đầu chụp hạt mạng RJ45 - Boot Color (chiếc)",
+    "price":"5.000đ",
+    "image":"../../assets/img/product/NSu_NC002.jpg",
+    "tags":["network-supplies","network-connector"]
+  },
+  {
+    "id": "NSu_NC003",
+    "name": "Đầu nối hạt mạng Rj45 Chất lượng cao, loại to đẹp xịn chất lượng cao",
+    "price":"12.000đ",
+    "image":"../../assets/img/product/NSu_NC003.jpg",
+    "tags":["network-supplies","network-connector"]
+  },
+  {
+    "id": "NSu_NC004",
+    "name": "Đầu mạng RJ45 DINTEK FTP Cat.6 chống nhiễu (1501-88032)",
+    "price":"2.290.000đ",
+    "image":"../../assets/img/product/NSu_NC004.jpg",
+    "tags":["network-supplies","network-connector"]
+  },
+  {
+    "id": "NSu_NC005",
+    "name": "Đầu nối mạng LAN RJ45 Ugreen 20311",
+    "price":"60.000đ",
+    "image":"../../assets/img/product/NSu_NC005.jpg",
+    "tags":["network-supplies","network-connector"]
+  },
+
+
+
+
+
+  {
+    "id": "NR_U001",
     "name": "USB Thu Sóng WiFi TP-Link T2U Plus",
     "price": "290.000đ",
-    "image": "https://via.placeholder.com/300x200?text=USB+WiFi",
+    "image": "../../assets/img/product/NR_U001.jpg",
     "tags": ["network-retriever", "usb-wifi"]
   },
+  {
+    "id": "NR_U002",
+    "name": "USB Thu Sóng WiFi AX300 Wi-Fi 6 USB Adapter D-Link DWA-X305",
+    "price": "190.000đ",
+    "image": "../../assets/img/product/NR_U002.jpg",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+  {
+    "id": "NR_U003",
+    "name": "USB Thu Sóng WiFi AX300 Wi-Fi 6 USB Adapter D-Link DWA-X300",
+    "price": "190.000đ",
+    "image": "../../assets/img/product/NR_U003.jpg",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+  {
+    "id": "NR_U004",
+    "name": "USB Thu Sóng WiFi Wifi 6 băng tần kép AX900 Totolink X900UA",
+    "price": "275.000đ",
+    "image": "../../assets/img/product/NR_U004.jpg",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+  {
+    "id": "NR_U005",
+    "name": "USB Thu Sóng WiFi AC1300 Mercusys MA32H",
+    "price": "289.000đ",
+    "image": "../../assets/img/product/NR_U005.jpg",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+  {
+    "id": "NR_U006",
+    "name": "USB Thu Sóng 6 AX1800 Tp-link Archer TX20U",
+    "price": "549.000đ",
+    "image": "../../assets/img/product/NR_U006.jpg",
+    "tags": ["network-retriever", "usb-wifi"]
+  },
+
+  {
+    "id": "NR_C001",
+    "name": "Card WiFi Asus AX3000",
+    "price": "690.000đ",
+    "image": "../../assets/img/product/NR_C001.jpg",
+    "tags": ["network-retriever","card-wifi"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "IEEE 802.11 ax, Bluetooth® 5.0" },
+      { "label": "Phân khúc sản phẩm", "value": "AX 3000 (2402Mbps+574Mbps)" },
+      { "label": "Bluetooth", "value": "5.0" },
+      { "label": "Tốc độ dữ liệu", "value": "802.11a : 6,9,12,18,24,36,48,54 Mbps<br>802.11b : 1, 2, 5.5, 11 Mbps<br>802.11g : 6,9,12,18,24,36,48,54 Mbps<br>802.11n : tối đa 300 Mbps<br>802.11ac (5GHz) : tối đa 1733 Mbps<br>802.11ax (2.4GHz) : tối đa 574 Mbps<br>802.11ax (5GHz) : tối đa 2402 Mbps" },
+      { "label": "Tần số hoạt động", "value": "2.4 GHz / 5 GHz" },
+      { "label": "Khối lượng", "value": "80 g (Chỉ riêng thiết bị)" },
+      { "label": "Hệ điều hành hỗ trợ", "value": "Windows® 10 64-bit<br>Linux" },
+      { "label": "Ghi chú", "value": "Trình điều khiển Linux Driver: hỗ trợ kernel 5.1+" }
+    ]
+  },
+  {
+    "id": "NR_C002",
+    "name": "Card mạng PCIe WiFi 6 ASUS PCE-AX3000 Chuẩn AX3000",
+    "price": "590.000đ",
+    "image": "../../assets/img/product/NR_C002.jpg",
+    "tags": ["network-retriever","card-wifi"]
+  },
+  {
+    "id": "NR_C003",
+    "name": "Card mạng  không dây USB TP-Link TL-WN722N Wireless N150Mbps",
+    "price": "186.000đ",
+    "image": "../../assets/img/product/NR_C003.jpg",
+    "tags": ["network-retriever","card-wifi"]
+  },
+  {
+    "id": "NR_C004",
+    "name": "Card mạng  không dây Card Mạng Không Dây TP-Link TL-WN781ND",
+    "price": "169.000đ",
+    "image": "../../assets/img/product/NR_C004.jpg",
+    "tags": ["network-retriever","card-wifi"]
+  },
+  {
+    "id": "NR_C005",
+    "name": "Card mạng TP-Link TX201 2.5 Gigabit PCIe Network Adapter",
+    "price": "399.000đ",
+    "image": "../../assets/img/product/NR_C005.jpg",
+    "tags": ["network-retriever","card-wifi"]
+  },
+
   {
     "id": "N001",
     "name": "NAS Synology DiskStation DS220j",
     "price": "4.990.000đ",
-    "image": "https://via.placeholder.com/300x200?text=NAS+Synology",
+    "image": "../../assets/img/product/N001.jpg",
     "tags": ["network-storage", "nas-home"]
   }
 ]
