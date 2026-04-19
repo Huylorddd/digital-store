@@ -75,9 +75,14 @@ function renderCart() {
         const priceNum = parseInt(item.price.replace(/\./g, ''));
         total += priceNum * item.quantity;
 
+        // Xử lý đường dẫn ảnh khi hiển thị trong giỏ hàng (nằm trong thư mục pages)
+        const imgSrc = item.image.includes('/assets/')
+            ? '../assets/' + item.image.split('/assets/')[1]
+            : item.image;
+
         html += `
         <div class="d-flex align-items-center border-bottom py-3">
-            <img src="${item.image}" width="80" class="rounded">
+            <img src="${imgSrc}" width="80" class="rounded">
             <div class="ms-3 flex-grow-1">
                 <h6 class="mb-0 text-truncate" style="max-width: 300px;">${item.name}</h6>
                 <small class="text-danger fw-bold">${item.price}</small>
