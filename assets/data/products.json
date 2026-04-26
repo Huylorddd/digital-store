@@ -315,10 +315,10 @@
   },
 
   {
-    "id": "N001",
+    "id": "NSto_NH001",
     "name": "NAS Synology DiskStation DS220j",
     "price": "4.990.000đ",
-    "image": "../../assets/img/product/N001.jpg",
+    "image": "../../assets/img/product/NSto_NH001.jpg",
     "tags": ["network-storage", "nas-home"]
   }
 ]
