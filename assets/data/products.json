@@ -1,273 +1,503 @@
 [
-
   {
     "id": "R001",
     "name": "Router Wifi 6 ASUS RT-AX82U V2",
     "price": "5.300.000đ",
     "image": "../../assets/img/product/R001.jpg",
-    "tags": ["router", "router-gaming", "router-6g"]
+    "tags": ["router", "router-gaming", "router-6g"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax)" },
+      { "label": "Băng tần hoạt động", "value": "Băng tần kép (2.4 GHz & 5 GHz)" },
+      { "label": "Tốc độ tối đa", "value": "AX5400 (574 Mbps + 4804 Mbps)" },
+      { "label": "Cổng kết nối", "value": "1 x RJ45 10/100/1000 cho WAN, 4 x RJ45 10/100/1000 cho LAN, 1 x USB 3.2 Gen 1" },
+      { "label": "Tính năng nổi bật", "value": "Aura RGB, ASUS Router App, AiMesh, Chuyên game" }
+    ]
   },
   {
     "id": "R002",
     "name": "Router Wifi TP-Link Archer C6",
     "price": "750.000đ",
     "image": "../../assets/img/product/R002.jpg",
-    "tags": ["router", "router-popular","router-gaming","router-6g","router-5g"]
+    "tags": ["router", "router-popular","router-gaming","router-6g","router-5g"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 5 (802.11ac)" },
+      { "label": "Băng tần hoạt động", "value": "Băng tần kép (2.4 GHz & 5 GHz)" },
+      { "label": "Tốc độ tối đa", "value": "AC1200 (300 Mbps + 867 Mbps)" },
+      { "label": "Cổng kết nối", "value": "1 cổng WAN Gigabit, 4 cổng LAN Gigabit" },
+      { "label": "Ăng ten", "value": "4 ăng ten ngoài + 1 ăng ten ngầm" }
+    ]
   },
-    {
+  {
     "id": "R003",
     "name": "Bộ phát wifi LigoWave Infinity NFT",
     "price": "2.495.000đ",
     "image": "../../assets/img/product/R003.jpg",
-    "tags": ["router", "router-popular","router-wall"]
+    "tags": ["router", "router-popular","router-wall"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "802.11 a/b/g/n/ac" },
+      { "label": "Tốc độ tối đa", "value": "1167 Mbps (300 Mbps + 867 Mbps)" },
+      { "label": "Số lượng user hỗ trợ", "value": "Khoảng 128 thiết bị đồng thời" },
+      { "label": "Cổng kết nối", "value": "3 cổng Gigabit Ethernet (1 cổng PoE In)" },
+      { "label": "Kiểu lắp đặt", "value": "Gắn tường hoặc để bàn" }
+    ]
   },
   {
     "id": "R004",
     "name": "Bộ phát wifi LigoWave Infinity NFT",
     "price": "2.495.000đ",
     "image": "../../assets/img/product/R004.jpg",
-    "tags": ["router", "router-popular","router-wall"]
+    "tags": ["router", "router-popular","router-wall"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "802.11 a/b/g/n/ac" },
+      { "label": "Tốc độ tối đa", "value": "1167 Mbps" },
+      { "label": "Quản lý", "value": "Infinity Controller (Cloud/On-premise)" },
+      { "label": "Cổng kết nối", "value": "3 cổng RJ45 Gigabit" },
+      { "label": "Công suất phát", "value": "22 dBm" }
+    ]
   },
   {
     "id": "R005",
     "name": "Bộ phát wifi UniFi NanoHD (UAP-nanoHD)",
     "price": "5.500.000đ",
     "image": "../../assets/img/product/R005.jpg",
-    "tags": ["router", "router-popular","router-5g","router-wall"]
+    "tags": ["router", "router-popular","router-5g","router-wall"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "802.11 a/b/g/n/ac/ac-wave2" },
+      { "label": "Tốc độ tối đa", "value": "2033 Mbps (300 Mbps 2.4GHz + 1733 Mbps 5GHz)" },
+      { "label": "Số lượng user hỗ trợ", "value": "Hỗ trợ tới 200+ thiết bị" },
+      { "label": "Chuẩn cấp nguồn", "value": "802.3af PoE" },
+      { "label": "Kiểu dáng", "value": "Ốp trần (Ceiling mount) nhỏ gọn" }
+    ]
   },
   {
     "id": "R006",
     "name": "Bộ phát wifi UniFi U6 Pro (U6-Pro)",
-    "price":"5.600.000đ",
-    "image":"../../assets/img/product/R006.jpg",
-    "tags":["router","router-popular","router-6g","router-wall"]
+    "price": "5.600.000đ",
+    "image": "../../assets/img/product/R006.jpg",
+    "tags": ["router","router-popular","router-6g","router-wall"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax)" },
+      { "label": "Tốc độ tối đa", "value": "5.3 Gbps (573.5 Mbps + 4.8 Gbps)" },
+      { "label": "MIMO", "value": "4x4 MU-MIMO và OFDMA" },
+      { "label": "Số lượng user hỗ trợ", "value": "Hỗ trợ 300+ thiết bị đồng thời" },
+      { "label": "Chuẩn cấp nguồn", "value": "802.3at PoE+" }
+    ]
   },
-
-   {
+  {
     "id": "R007",
     "name": "Thiết bị cân bằng tải Router Draytek Vigor 2926 plus",
-    "price":"3.490.000đ",
-    "image":"../../assets/img/product/R007.jpg",
-    "tags":["router","router-popular","router-wall"]
+    "price": "3.490.000đ",
+    "image": "../../assets/img/product/R007.jpg",
+    "tags": ["router","router-popular","router-wall"],
+    "detailedSpecs": [
+      { "label": "Cổng WAN", "value": "2 cổng Gigabit Ethernet" },
+      { "label": "Cổng LAN", "value": "4 cổng Gigabit Ethernet" },
+      { "label": "Session", "value": "50,000 NAT Sessions" },
+      { "label": "VPN", "value": "Hỗ trợ tối đa 50 kênh VPN (IPsec/PPTP/L2TP)" },
+      { "label": "Cân bằng tải", "value": "Load Balancing & Failover" }
+    ]
   },
   {
     "id": "R008",
     "name": "Thiết bị cân bằng tải Router Draytek Vigor 2962",
-    "price":"8.550.000đ",
-    "image":"../../assets/img/product/R008.jpg",
-    "tags":["router","router-popular","router-wall"]
+    "price": "8.550.000đ",
+    "image": "../../assets/img/product/R008.jpg",
+    "tags": ["router","router-popular","router-wall"],
+    "detailedSpecs": [
+      { "label": "Cổng mạng", "value": "4 cổng chuyển đổi WAN/LAN (gồm 1x 2.5GbE, 1x SFP/GbE, 2x GbE)" },
+      { "label": "Session", "value": "300,000 NAT Sessions" },
+      { "label": "Băng thông NAT", "value": "Lên đến 2.2 Gbps" },
+      { "label": "VPN", "value": "Hỗ trợ 200 kênh VPN đồng thời" },
+      { "label": "Quản lý tập trung", "value": "VigorACS 2" }
+    ]
   },
   {
     "id": "R009",
     "name": "Thiết bị cân bằng tải Router Draytek Vigor 2927",
-    "price":"8.550.000đ",
-    "image":"../../assets/img/product/R009.jpg",
-    "tags":["router","router-popular"]
+    "price": "8.550.000đ",
+    "image": "../../assets/img/product/R009.jpg",
+    "tags": ["router","router-popular"],
+    "detailedSpecs": [
+      { "label": "Cổng WAN", "value": "2 cổng Gigabit Ethernet" },
+      { "label": "Cổng LAN", "value": "5 cổng Gigabit Ethernet" },
+      { "label": "Session", "value": "60,000 NAT Sessions" },
+      { "label": "Băng thông NAT", "value": "1.8 Gbps (Dual WAN)" },
+      { "label": "VPN", "value": "50 kênh VPN đồng thời" }
+    ]
   },
   {
     "id": "R010",
-    "name": "Thiết bị cân bằng tải Router UniFi Dream Machine Pro (UDM-PRO), 9 Port Gigabit Ethernet, 2 Port SFP+",
-    "price":"14.738.000đ",
-    "image":"../../assets/img/product/R010.jpg",
-    "tags":["router","router-popular"]
+    "name": "Thiết bị cân bằng tải Router UniFi Dream Machine Pro (UDM-PRO)",
+    "price": "14.738.000đ",
+    "image": "../../assets/img/product/R010.jpg",
+    "tags": ["router","router-popular"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Quad ARM Cortex-A57 1.7 GHz" },
+      { "label": "Cổng kết nối", "value": "8 cổng LAN Gigabit, 1 cổng WAN Gigabit, 2 cổng SFP+ 10G" },
+      { "label": "Bảo mật", "value": "Enterprise-class IPS/IDS, DPI" },
+      { "label": "Lưu trữ", "value": "1 khay ổ cứng HDD 3.5\" cho UniFi Protect" },
+      { "label": "Quản lý", "value": "Tích hợp sẵn UniFi Network Controller" }
+    ]
   },
   {
     "id": "R011",
     "name": "Thiết bị cân bằng tải Router UniFi Dream Machine Special Edition (UDM-SE)",
-    "price":"18.919.000đ",
-    "image":"../../assets/img/product/R011.jpg",
-    "tags":["router","router-popular"]
+    "price": "18.919.000đ",
+    "image": "../../assets/img/product/R011.jpg",
+    "tags": ["router","router-popular"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Quad-core ARM Cortex-A57 at 1.7 GHz" },
+      { "label": "Cổng kết nối", "value": "8 cổng LAN (2x PoE+, 6x PoE), 1 WAN 2.5G, 2 SFP+ 10G" },
+      { "label": "Bộ nhớ trong", "value": "Tích hợp sẵn SSD 128GB" },
+      { "label": "Lưu trữ mở rộng", "value": "1 khay ổ cứng HDD 3.5\"/2.5\"" },
+      { "label": "Tính năng", "value": "Tích hợp hệ điều hành UniFi OS (Network, Protect, Access, Talk)" }
+    ]
   },
   {
     "id": "R012",
     "name": "Thiết bị cân bằng tải Router UniFi Security Gateway Pro (USG-Pro-4)",
-    "price":"16.995.000đ",
-    "image":"../../assets/img/product/R012.jpg",
-    "tags":["router","router-wall"]
+    "price": "16.995.000đ",
+    "image": "../../assets/img/product/R012.jpg",
+    "tags": ["router","router-wall"],
+    "detailedSpecs": [
+      { "label": "Cổng mạng", "value": "2 cổng Gigabit LAN, 2 cổng Gigabit RJ45/SFP WAN" },
+      { "label": "Hiệu suất chuyển tiếp", "value": "2.4 triệu gói tin mỗi giây (Layer 3)" },
+      { "label": "Bảo mật", "value": "Firewall, VLAN, VPN, QoS" },
+      { "label": "Vi xử lý", "value": "Dual-Core 1 GHz" },
+      { "label": "Kiểu dáng", "value": "Chuẩn Rackmount 1U" }
+    ]
   },
   {
     "id": "R013",
-    "name": "Bộ phát wifi ASUS ROG Rapture GT-BE98 Pro Wireless Quad-Band Multi-Gig Gaming Router (1001)",
+    "name": "Bộ phát wifi ASUS ROG Rapture GT-BE98 Pro Wireless Quad-Band",
     "price": "32.000.000đ",
     "image": "../../assets/img/product/R013.jpg",
-    "tags": ["router", "router-gaming", "router-6g", "router-5g"]
+    "tags": ["router", "router-gaming", "router-6g", "router-5g"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 7 (802.11be)" },
+      { "label": "Tốc độ tối đa", "value": "Lên đến 30,000 Mbps (Quad-Band)" },
+      { "label": "Cổng kết nối", "value": "2 cổng 10G WAN/LAN, 4 cổng 2.5G LAN, 1 cổng Gigabit LAN" },
+      { "label": "Vi xử lý", "value": "CPU lõi tứ 2.6 GHz" },
+      { "label": "Công nghệ nổi bật", "value": "Multi-Link Operation (MLO), 320MHz Bandwidth, RGB Aura" }
+    ]
   },
   {
     "id": "R014",
-    "name": "Bộ phát wifi ASUS ROG Rapture  GT-BE19000AI Tri-band Gaming Router, WiFi 7 802.11be Dual 10G",
+    "name": "Bộ phát wifi ASUS ROG Rapture GT-BE19000AI Tri-band Gaming Router",
     "price": "44.500.000đ",
     "image": "../../assets/img/product/R014.jpg",
-    "tags": ["router", "router-gaming", "router-6g"]
+    "tags": ["router", "router-gaming", "router-6g"],
+    "detailedSpecs": [
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 7 (802.11be) Tri-band" },
+      { "label": "Tốc độ tối đa", "value": "19,000 Mbps" },
+      { "label": "Công nghệ AI", "value": "Tối ưu hóa băng thông bằng AI, AI Protection Pro" },
+      { "label": "Cổng kết nối", "value": "Dual 10G Ports, các cổng LAN 2.5G" },
+      { "label": "Chuyên dụng", "value": "Định tuyến Game tự động, tối ưu Ping" }
+    ]
   },
-
-
-
   {
     "id": "NSu_CN001",
     "name": "Cáp mạng bấm sẵn Cat6 UTP dài 20m Ugreen 11206 màu xanh dương",
-    "price":"180.000đ",
-    "image":"../../assets/img/product/NSu_CN001.jpg",
-    "tags":["network-supplies","cable-network"]
+    "price": "180.000đ",
+    "image": "../../assets/img/product/NSu_CN001.jpg",
+    "tags": ["network-supplies","cable-network"],
+    "detailedSpecs": [
+      { "label": "Loại cáp", "value": "Cat6 UTP (Unshielded Twisted Pair)" },
+      { "label": "Chiều dài", "value": "20 mét" },
+      { "label": "Tốc độ truyền tải", "value": "10/100/1000 Mbps (1 Gbps)" },
+      { "label": "Băng thông", "value": "250 MHz" },
+      { "label": "Chất liệu lõi", "value": "Đồng nguyên chất (Bare Copper)" }
+    ]
   },
   {
     "id": "NSu_CN002",
-    "name": "Cáp mạng Tốc Độ Cao SFTP Cat8 VENTION IKK dài 20m (40Gbps/2000MHz)",
-    "price":"442.000đ",
-    "image":"../../assets/img/product/NSu_CN002.jpg",
-    "tags":["network-supplies","cable-network"  ]
+    "name": "Cáp mạng Tốc Độ Cao SFTP Cat8 VENTION IKK dài 20m",
+    "price": "442.000đ",
+    "image": "../../assets/img/product/NSu_CN002.jpg",
+    "tags": ["network-supplies","cable-network"],
+    "detailedSpecs": [
+      { "label": "Loại cáp", "value": "Cat8 SFTP (Có màng bọc chống nhiễu kép)" },
+      { "label": "Chiều dài", "value": "20 mét" },
+      { "label": "Tốc độ truyền tải", "value": "Lên đến 40 Gbps" },
+      { "label": "Băng thông", "value": "2000 MHz" },
+      { "label": "Vỏ bọc", "value": "PVC bền bỉ, đầu cắm mạ vàng" }
+    ]
   },
   {
     "id": "NSu_CN003",
-    "name": "Cáp mạng Cat8 SFTP VENTION IKA 1m (40Gbps)",
-    "price":"60.000đ",
-    "image":"../../assets/img/product/NSu_CN003.jpg",
-    "tags":["network-supplies","cable-network"  ]
+    "name": "Cáp mạng Cat8 SFTP VENTION IKA 1m",
+    "price": "60.000đ",
+    "image": "../../assets/img/product/NSu_CN003.jpg",
+    "tags": ["network-supplies","cable-network"],
+    "detailedSpecs": [
+      { "label": "Loại cáp", "value": "Cat8 SFTP" },
+      { "label": "Chiều dài", "value": "1 mét" },
+      { "label": "Tốc độ truyền tải", "value": "40 Gbps" },
+      { "label": "Băng thông", "value": "2000 MHz" },
+      { "label": "Ứng dụng", "value": "Kết nối Server, PC Gaming, Data Center" }
+    ]
   },
-    {
+  {
     "id": "NSu_CN004",
-    "name": "Cáp mạng  LAN Cat.6A SFTP VENTION VPC6SSTP 1m (10Gbps)",
-    "price":"60.000đ",
-    "image":"../../assets/img/product/NSu_CN004.jpg",
-    "tags":["network-supplies","cable-network"  ]
+    "name": "Cáp mạng LAN Cat.6A SFTP VENTION VPC6SSTP 1m",
+    "price": "60.000đ",
+    "image": "../../assets/img/product/NSu_CN004.jpg",
+    "tags": ["network-supplies","cable-network"],
+    "detailedSpecs": [
+      { "label": "Loại cáp", "value": "Cat6A SFTP" },
+      { "label": "Chiều dài", "value": "1 mét" },
+      { "label": "Tốc độ truyền tải", "value": "10 Gbps" },
+      { "label": "Băng thông", "value": "500 MHz" },
+      { "label": "Tính năng", "value": "Chống nhiễu tốt, đầu bọc nhôm" }
+    ]
   },
-    {
+  {
     "id": "NSu_CN005",
-    "name": "Cáp mạng LAN Flat Cat.7 VENTION ICA 1m (Flat Cable, 10Gbps)",
-    "price":"51.000đ",
-    "image":"../../assets/img/product/NSu_CN005.jpg",
-    "tags":["network-supplies","cable-network"  ]
+    "name": "Cáp mạng LAN Flat Cat.7 VENTION ICA 1m",
+    "price": "51.000đ",
+    "image": "../../assets/img/product/NSu_CN005.jpg",
+    "tags": ["network-supplies","cable-network"],
+    "detailedSpecs": [
+      { "label": "Loại cáp", "value": "Cat7 (Dạng dẹt - Flat Cable)" },
+      { "label": "Chiều dài", "value": "1 mét" },
+      { "label": "Tốc độ truyền tải", "value": "10 Gbps" },
+      { "label": "Băng thông", "value": "600 MHz" },
+      { "label": "Ưu điểm", "value": "Dây dẹt dễ dàng đi ngầm dưới thảm hoặc khe hẹp" }
+    ]
   },
-
-
   {
     "id": "NSu_NI001",
     "name": "Ubiquiti UniFi Switch Pro 24 PoE (USW-Pro-24-PoE)",
-    "price":"23.122.000đ",
-    "image":"../../assets/img/product/NSu_NI001.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "price": "23.122.000đ",
+    "image": "../../assets/img/product/NSu_NI001.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Managed Switch Layer 3" },
+      { "label": "Cổng kết nối", "value": "24 cổng Gigabit RJ45, 2 cổng 10G SFP+" },
+      { "label": "Chuẩn PoE", "value": "16 cổng PoE+ (802.3at) và 8 cổng PoE++ (802.3bt)" },
+      { "label": "Công suất PoE tổng", "value": "400W" },
+      { "label": "Màn hình hiển thị", "value": "Cảm ứng 1.3 inch LCM" }
+    ]
   },
   {
     "id": "NSu_NI002",
     "name": "Switch Unifi 8 Port PoE Ultra 210W (USW-Ultra-210W)",
-    "price":"8.640.000đ",
-    "image":"../../assets/img/product/NSu_NI002.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "price": "8.640.000đ",
+    "image": "../../assets/img/product/NSu_NI002.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Managed Switch Layer 2" },
+      { "label": "Cổng kết nối", "value": "8 cổng Gigabit RJ45" },
+      { "label": "Cổng PoE", "value": "7 cổng hỗ trợ PoE+ (802.3at) out, 1 cổng PoE++ in" },
+      { "label": "Công suất PoE tổng", "value": "Tối đa 210W (khi dùng Adapter đi kèm)" },
+      { "label": "Kiểu dáng", "value": "Nhỏ gọn, để bàn hoặc treo tường" }
+    ]
   },
   {
     "id": "NSu_NI003",
     "name": "Thiết bị chuyển mạch Ubiquiti UniFi Switch 24 (USW-24)",
-    "price":"7.350.000đ",
-    "image":"../../assets/img/product/NSu_NI003.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "price": "7.350.000đ",
+    "image": "../../assets/img/product/NSu_NI003.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Managed Switch Layer 2" },
+      { "label": "Cổng kết nối", "value": "24 cổng Gigabit RJ45, 2 cổng SFP 1G" },
+      { "label": "Làm mát", "value": "Thiết kế tản nhiệt không quạt (Fanless), im lặng tuyệt đối" },
+      { "label": "Quản lý", "value": "UniFi Network Controller" },
+      { "label": "PoE", "value": "Không hỗ trợ PoE" }
+    ]
   },
   {
     "id": "NSu_NI004",
     "name": "Ubiquiti UniFi Switch Pro 48 (USW-Pro-48)",
-    "price":"18.152.000đ",
-    "image":"../../assets/img/product/NSu_NI004.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "price": "18.152.000đ",
+    "image": "../../assets/img/product/NSu_NI004.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Managed Switch Layer 3" },
+      { "label": "Cổng kết nối", "value": "48 cổng Gigabit RJ45, 4 cổng 10G SFP+" },
+      { "label": "Khả năng chuyển mạch", "value": "176 Gbps" },
+      { "label": "Nguồn điện", "value": "Hỗ trợ UniFi SmartPower RPS" },
+      { "label": "PoE", "value": "Không hỗ trợ" }
+    ]
   },
   {
     "id": "NSu_NI005",
-    "name": "Thiết bị tường lửa RUIJIE RG-WALL 1600-M5100 | Hàng chính hãng",
-    "price":"41.250.000đ",
-    "image":"../../assets/img/product/NSu_NI005.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "name": "Thiết bị tường lửa RUIJIE RG-WALL 1600-M5100",
+    "price": "41.250.000đ",
+    "image": "../../assets/img/product/NSu_NI005.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Next-Generation Firewall (NGFW)" },
+      { "label": "Thông lượng Firewall", "value": "4 Gbps" },
+      { "label": "Thông lượng IPS/Antivirus", "value": "1.5 Gbps / 1 Gbps" },
+      { "label": "Cổng giao tiếp", "value": "6 cổng Gigabit Base-T, 2 cổng SFP" },
+      { "label": "Số lượng session đồng thời", "value": "Lên đến 1,500,000" }
+    ]
   },
   {
     "id": "NSu_NI006",
-    "name": "Thiết bị tường lửa Firewall Fortinet FortiGate 60F (FG-60F-BDL-950-12), Thiết bị tường lửa cho văn phòng, doanh nghiệp 25 người dùng",
-    "price":"27.950.000đ",
-    "image":"../../assets/img/product/NSu_NI006.jpg",
-    "tags":["network-supplies","network-infrastructure"]
+    "name": "Thiết bị tường lửa Firewall Fortinet FortiGate 60F",
+    "price": "27.950.000đ",
+    "image": "../../assets/img/product/NSu_NI006.jpg",
+    "tags": ["network-supplies","network-infrastructure"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Firewall doanh nghiệp nhỏ (SD-WAN)" },
+      { "label": "Thông lượng Firewall", "value": "10 Gbps" },
+      { "label": "Thông lượng IPS", "value": "1.4 Gbps" },
+      { "label": "Cổng kết nối", "value": "10 cổng GE RJ45 (bao gồm WAN/LAN/DMZ)" },
+      { "label": "Quy mô khuyến nghị", "value": "Lên đến 25-50 người dùng" }
+    ]
   },
-
-
-
-
   {
     "id": "NSu_NC001",
     "name": "Hạt mạng RJ45 Cat6/Cat6a Ugreen 60558",
-    "price":"3.000đ",
-    "image":"../../assets/img/product/NSu_NC001.jpg",
-    "tags":["network-supplies","network-connector"]
+    "price": "3.000đ",
+    "image": "../../assets/img/product/NSu_NC001.jpg",
+    "tags": ["network-supplies","network-connector"],
+    "detailedSpecs": [
+      { "label": "Loại đầu nối", "value": "RJ45" },
+      { "label": "Tương thích", "value": "Cáp mạng Cat6, Cat6a" },
+      { "label": "Chất liệu chân tiếp xúc", "value": "Đồng nguyên chất mạ vàng 24K (chống oxi hóa)" },
+      { "label": "Chất liệu vỏ", "value": "Nhựa trong suốt PC cao cấp" }
+    ]
   },
   {
     "id": "NSu_NC002",
-    "name": "Đầu chụp hạt mạng RJ45 - Boot Color (chiếc)",
-    "price":"5.000đ",
-    "image":"../../assets/img/product/NSu_NC002.jpg",
-    "tags":["network-supplies","network-connector"]
+    "name": "Đầu chụp hạt mạng RJ45 - Boot Color",
+    "price": "5.000đ",
+    "image": "../../assets/img/product/NSu_NC002.jpg",
+    "tags": ["network-supplies","network-connector"],
+    "detailedSpecs": [
+      { "label": "Loại phụ kiện", "value": "Đầu chụp bảo vệ (Boot)" },
+      { "label": "Chất liệu", "value": "Cao su mềm dẻo" },
+      { "label": "Chức năng", "value": "Bảo vệ lẫy hạt mạng, chống đứt gãy cáp" },
+      { "label": "Tương thích", "value": "Hạt mạng chuẩn RJ45 Cat5e/Cat6" }
+    ]
   },
   {
     "id": "NSu_NC003",
-    "name": "Đầu nối hạt mạng Rj45 Chất lượng cao, loại to đẹp xịn chất lượng cao",
-    "price":"12.000đ",
-    "image":"../../assets/img/product/NSu_NC003.jpg",
-    "tags":["network-supplies","network-connector"]
+    "name": "Đầu nối hạt mạng Rj45 Chất lượng cao",
+    "price": "12.000đ",
+    "image": "../../assets/img/product/NSu_NC003.jpg",
+    "tags": ["network-supplies","network-connector"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Khớp nối LAN (RJ45 Coupler)" },
+      { "label": "Chức năng", "value": "Nối dài 2 đoạn dây mạng LAN" },
+      { "label": "Chuẩn hỗ trợ", "value": "Cat5e / Cat6" },
+      { "label": "Tốc độ truyền tải", "value": "Gigabit 1000Mbps" }
+    ]
   },
   {
     "id": "NSu_NC004",
-    "name": "Đầu mạng RJ45 DINTEK FTP Cat.6 chống nhiễu (1501-88032)",
-    "price":"2.290.000đ",
-    "image":"../../assets/img/product/NSu_NC004.jpg",
-    "tags":["network-supplies","network-connector"]
+    "name": "Đầu mạng RJ45 DINTEK FTP Cat.6 chống nhiễu",
+    "price": "2.290.000đ",
+    "image": "../../assets/img/product/NSu_NC004.jpg",
+    "tags": ["network-supplies","network-connector"],
+    "detailedSpecs": [
+      { "label": "Quy cách đóng gói", "value": "Hộp 100 hạt" },
+      { "label": "Loại hạt mạng", "value": "Cat6 FTP (Bọc kim loại chống nhiễu)" },
+      { "label": "Tốc độ hỗ trợ", "value": "Gigabit Ethernet (10/100/1000Mbps)" },
+      { "label": "Chất liệu", "value": "Chân cắm mạ vàng, vỏ bọc kim loại" }
+    ]
   },
   {
     "id": "NSu_NC005",
     "name": "Đầu nối mạng LAN RJ45 Ugreen 20311",
-    "price":"60.000đ",
-    "image":"../../assets/img/product/NSu_NC005.jpg",
-    "tags":["network-supplies","network-connector"]
+    "price": "60.000đ",
+    "image": "../../assets/img/product/NSu_NC005.jpg",
+    "tags": ["network-supplies","network-connector"],
+    "detailedSpecs": [
+      { "label": "Loại thiết bị", "value": "Đầu nối dây mạng LAN" },
+      { "label": "Cổng kết nối", "value": "Female to Female RJ45" },
+      { "label": "Tốc độ tối đa", "value": "1000Mbps" },
+      { "label": "Chất liệu", "value": "Vỏ nhựa ABS chống cháy, lõi mạ vàng chống nhiễu" }
+    ]
   },
-
-
-
-
-
   {
     "id": "NR_U001",
     "name": "USB Thu Sóng WiFi TP-Link T2U Plus",
     "price": "290.000đ",
     "image": "../../assets/img/product/NR_U001.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 2.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 5 (802.11ac/n/g/b/a)" },
+      { "label": "Tốc độ không dây", "value": "600 Mbps (200 Mbps trên 2.4GHz + 433 Mbps trên 5GHz)" },
+      { "label": "Ăng-ten", "value": "1 Ăng-ten ngoài 5dBi độ lợi cao, có thể xoay hướng" },
+      { "label": "Hỗ trợ hệ điều hành", "value": "Windows, macOS" }
+    ]
   },
   {
     "id": "NR_U002",
     "name": "USB Thu Sóng WiFi AX300 Wi-Fi 6 USB Adapter D-Link DWA-X305",
     "price": "190.000đ",
     "image": "../../assets/img/product/NR_U002.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 2.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax/n/g/b)" },
+      { "label": "Băng tần", "value": "2.4 GHz" },
+      { "label": "Tốc độ tối đa", "value": "Lên đến 286 Mbps" },
+      { "label": "Thiết kế", "value": "Siêu nhỏ gọn (Nano size)" }
+    ]
   },
   {
     "id": "NR_U003",
     "name": "USB Thu Sóng WiFi AX300 Wi-Fi 6 USB Adapter D-Link DWA-X300",
     "price": "190.000đ",
     "image": "../../assets/img/product/NR_U003.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 2.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax) dành cho dải 2.4GHz" },
+      { "label": "Tốc độ", "value": "286 Mbps" },
+      { "label": "Bảo mật", "value": "WPA3 mới nhất" },
+      { "label": "Ăng-ten", "value": "Ăng-ten ngầm tích hợp" }
+    ]
   },
   {
     "id": "NR_U004",
     "name": "USB Thu Sóng WiFi Wifi 6 băng tần kép AX900 Totolink X900UA",
     "price": "275.000đ",
     "image": "../../assets/img/product/NR_U004.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 2.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax/ac/a/b/g/n)" },
+      { "label": "Tốc độ tối đa", "value": "AX900 (286Mbps ở 2.4GHz + 600Mbps ở 5GHz)" },
+      { "label": "Bảo mật", "value": "WPA3/WPA2/WPA" },
+      { "label": "Ăng-ten", "value": "Ăng ten đa hướng ngầm" }
+    ]
   },
   {
     "id": "NR_U005",
     "name": "USB Thu Sóng WiFi AC1300 Mercusys MA32H",
     "price": "289.000đ",
     "image": "../../assets/img/product/NR_U005.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 3.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 5 (802.11ac)" },
+      { "label": "Tốc độ truyền tải", "value": "AC1300 (400Mbps ở 2.4GHz + 867Mbps ở 5GHz)" },
+      { "label": "Ăng-ten", "value": "Ăng-ten điều hướng công suất cao" },
+      { "label": "Tính năng", "value": "Hỗ trợ MU-MIMO" }
+    ]
   },
   {
     "id": "NR_U006",
     "name": "USB Thu Sóng 6 AX1800 Tp-link Archer TX20U",
     "price": "549.000đ",
     "image": "../../assets/img/product/NR_U006.jpg",
-    "tags": ["network-retriever", "usb-wifi"]
+    "tags": ["network-retriever", "usb-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 3.0" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax)" },
+      { "label": "Tốc độ tối đa", "value": "1800 Mbps (574 Mbps 2.4GHz + 1201 Mbps 5GHz)" },
+      { "label": "Ăng-ten", "value": "Tích hợp ăng-ten kép thông minh (Dual-Band)" },
+      { "label": "Bảo mật", "value": "WPA3 tiên tiến" }
+    ]
   },
-
   {
     "id": "NR_C001",
     "name": "Card WiFi Asus AX3000",
@@ -290,35 +520,251 @@
     "name": "Card mạng PCIe WiFi 6 ASUS PCE-AX3000 Chuẩn AX3000",
     "price": "590.000đ",
     "image": "../../assets/img/product/NR_C002.jpg",
-    "tags": ["network-retriever","card-wifi"]
+    "tags": ["network-retriever","card-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao tiếp", "value": "PCI Express x1" },
+      { "label": "Chuẩn mạng", "value": "Wi-Fi 6 (802.11ax), hỗ trợ Bluetooth 5.0" },
+      { "label": "Tốc độ tối đa", "value": "AX3000 (574 Mbps + 2402 Mbps)" },
+      { "label": "Ăng-ten", "value": "2 Ăng-ten ngoài có thể tháo rời" },
+      { "label": "Tính năng", "value": "OFDMA và MU-MIMO, tản nhiệt nhôm lớn" }
+    ]
   },
   {
     "id": "NR_C003",
-    "name": "Card mạng  không dây USB TP-Link TL-WN722N Wireless N150Mbps",
+    "name": "Card mạng không dây USB TP-Link TL-WN722N Wireless N150Mbps",
     "price": "186.000đ",
     "image": "../../assets/img/product/NR_C003.jpg",
-    "tags": ["network-retriever","card-wifi"]
+    "tags": ["network-retriever","card-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao diện", "value": "USB 2.0" },
+      { "label": "Chuẩn mạng", "value": "IEEE 802.11n, IEEE 802.11g, IEEE 802.11b" },
+      { "label": "Tốc độ tối đa", "value": "150 Mbps (trên băng tần 2.4GHz)" },
+      { "label": "Ăng-ten", "value": "1 Ăng-ten rời 4dBi" },
+      { "label": "Bảo mật", "value": "Mã hóa bảo mật WEP, WPA/WPA2 dễ dàng bằng nút WPS" }
+    ]
   },
   {
     "id": "NR_C004",
-    "name": "Card mạng  không dây Card Mạng Không Dây TP-Link TL-WN781ND",
+    "name": "Card Mạng Không Dây TP-Link TL-WN781ND",
     "price": "169.000đ",
     "image": "../../assets/img/product/NR_C004.jpg",
-    "tags": ["network-retriever","card-wifi"]
+    "tags": ["network-retriever","card-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao tiếp", "value": "PCI Express x1" },
+      { "label": "Chuẩn mạng", "value": "IEEE 802.11b/g/n" },
+      { "label": "Tốc độ tối đa", "value": "150 Mbps (chỉ hỗ trợ băng tần 2.4GHz)" },
+      { "label": "Ăng-ten", "value": "1 Ăng-ten ngoài tháo rời được" },
+      { "label": "Tương thích", "value": "Hoạt động tốt cho các nhu cầu lướt web cơ bản cho máy bàn cũ" }
+    ]
   },
   {
     "id": "NR_C005",
     "name": "Card mạng TP-Link TX201 2.5 Gigabit PCIe Network Adapter",
     "price": "399.000đ",
     "image": "../../assets/img/product/NR_C005.jpg",
-    "tags": ["network-retriever","card-wifi"]
+    "tags": ["network-retriever","card-wifi"],
+    "detailedSpecs": [
+      { "label": "Giao tiếp", "value": "PCI Express (PCIe)" },
+      { "label": "Cổng mạng", "value": "1 cổng RJ45 hỗ trợ tốc độ 2.5 Gigabit" },
+      { "label": "Tốc độ truyền tải", "value": "10/100/1000/2500 Mbps (Tự động nhận dạng)" },
+      { "label": "Khung nhôm (Bracket)", "value": "Đi kèm thanh lùn (Low-Profile Bracket) cho thùng máy nhỏ" },
+      { "label": "Tính năng", "value": "Wake-on-LAN, QoS" }
+    ]
   },
-
   {
     "id": "NSto_NH001",
-    "name": "NAS Synology DiskStation DS220j",
+    "name": "Thiết bị lưu trữ mạng NAS Synology DiskStation DS220j",
     "price": "4.990.000đ",
     "image": "../../assets/img/product/NSto_NH001.jpg",
-    "tags": ["network-storage", "nas-home"]
+    "tags": ["network-storage", "nas-home"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Realtek RTD1296 4-core 1.4 GHz" },
+      { "label": "RAM", "value": "512 MB DDR4" },
+      { "label": "Số khay ổ cứng", "value": "2 Khay (Drive Bays) hỗ trợ HDD/SSD 3.5\" hoặc 2.5\"" },
+      { "label": "Dung lượng tối đa", "value": "Lên đến 32 TB (16 TB x 2)" },
+      { "label": "Cổng kết nối", "value": "1 cổng Gigabit RJ45, 2 cổng USB 3.0" }
+    ]
+  },
+  {
+    "id": "NSto_NH002",
+    "name": "Thiết bị lưu trữ mạng NAS Synology DS224+",
+    "price": "8.750.000đ",
+    "image": "../../assets/img/product/NSto_NH002.jpg",
+    "tags": ["network-storage", "nas-home" , "nas-enterprise"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Intel Celeron J4125 4-core 2.0 (lên đến 2.7 GHz)" },
+      { "label": "RAM", "value": "2 GB DDR4 non-ECC (Có thể nâng cấp lên 6 GB)" },
+      { "label": "Số khay ổ cứng", "value": "2 Khay hỗ trợ HDD/SSD" },
+      { "label": "Cổng kết nối", "value": "2 cổng Gigabit LAN (Hỗ trợ Link Aggregation), 2 cổng USB 3.2" },
+      { "label": "Tính năng", "value": "Hệ thống File Btrfs, hỗ trợ ảo hóa, Docker" }
+    ]
+  },
+  {
+    "id": "NSto_NH003",
+    "name": "Thiết bị lưu trữ mạng NAS Synology DS225+",
+    "price": "9.450.000đ",
+    "image": "../../assets/img/product/NSto_NH003.jpg",
+    "tags": ["network-storage", "nas-home"],
+    "detailedSpecs": [
+      { "label": "Dòng sản phẩm", "value": "Bản nâng cấp thế hệ Plus Series cho gia đình/SOHO" },
+      { "label": "Khay chứa", "value": "2 Khay ổ cứng (Hỗ trợ Hot Swap)" },
+      { "label": "Bộ nhớ", "value": "Tích hợp RAM chuẩn DDR4, hỗ trợ mở rộng" },
+      { "label": "Khả năng bảo vệ", "value": "RAID 0, 1, Synology Hybrid RAID (SHR)" },
+      { "label": "Hệ điều hành", "value": "Synology DiskStation Manager (DSM) mới nhất" }
+    ]
+  },
+  {
+    "id": "NSto_NH004",
+    "name": "Thiết bị lưu trữ mạng NAS Synology DS124",
+    "price": "3.990.000đ",
+    "image": "../../assets/img/product/NSto_NH004.jpg",
+    "tags": ["network-storage", "nas-home"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Realtek RTD1619B Quad-Core" },
+      { "label": "RAM", "value": "1 GB DDR4" },
+      { "label": "Số khay ổ cứng", "value": "1 Khay duy nhất" },
+      { "label": "Cổng kết nối", "value": "1 Gigabit LAN, 2 cổng USB 3.2 Gen 1" },
+      { "label": "Phù hợp cho", "value": "Sao lưu dữ liệu cá nhân đơn giản, làm Media Server tại nhà" }
+    ]
+  },
+  {
+    "id": "NSto_NH005",
+    "name": "Thiết bị lưu trữ mạng NAS Synology DS223j",
+    "price": "5.599.000đ",
+    "image": "../../assets/img/product/NSto_NH005.jpg",
+    "tags": ["network-storage", "nas-home"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Realtek RTD1619B 4-core 1.7 GHz" },
+      { "label": "RAM", "value": "1 GB DDR4" },
+      { "label": "Số khay ổ cứng", "value": "2 Khay (HDD 3.5\"/2.5\")" },
+      { "label": "Hệ thống File hỗ trợ", "value": "Btrfs (Bảo vệ dữ liệu toàn vẹn), EXT4" },
+      { "label": "Điện năng tiêu thụ", "value": "Rất tiết kiệm điện (Khoảng 16W khi hoạt động)" }
+    ]
+  },
+  {
+    "id": "NSto_NE001",
+    "name": "Thiết bị lưu trữ NAS TerraMaster F5-422",
+    "price": "13.800.000đ",
+    "image": "../../assets/img/product/NSto_NE001.jpg",
+    "tags": ["network-storage", "nas-home","nas-enterprise"],
+    "detailedSpecs": [
+      { "label": "Vi xử lý (CPU)", "value": "Intel Celeron J3455 Quad-core 1.5 GHz" },
+      { "label": "RAM", "value": "4 GB DDR3 (Có thể nâng cấp lên 8GB)" },
+      { "label": "Số khay ổ cứng", "value": "5 Khay (Hỗ trợ dung lượng tổng lên tới 90TB)" },
+      { "label": "Cổng mạng tốc độ cao", "value": "1 cổng 10 Gigabit (10GbE), 2 cổng 1GbE" },
+      { "label": "Vỏ máy", "value": "Thiết kế nhôm đúc tản nhiệt tốt" }
+    ]
+  },
+  {
+    "id": "NSto_NE002",
+    "name": "Thiết bị lưu trữ NAS Synology RS1619xs+",
+    "price": "52.300.000đ",
+    "image": "../../assets/img/product/NSto_NE002.jpg",
+    "tags": ["network-storage", "nas-enterprise"],
+    "detailedSpecs": [
+      { "label": "Kiểu dáng", "value": "Rackmount 1U (Lắp tủ mạng)" },
+      { "label": "Vi xử lý (CPU)", "value": "Intel Xeon D-1527 Quad-Core 2.2 (lên đến 2.7 GHz)" },
+      { "label": "RAM", "value": "8 GB DDR4 ECC UDIMM (Nâng cấp tối đa 64 GB)" },
+      { "label": "Số khay ổ cứng", "value": "4 Khay, có 2 khe cắm M.2 NVMe SSD Cache" },
+      { "label": "Cổng kết nối", "value": "4 cổng 1GbE (Hỗ trợ lắp thêm card mạng 10GbE PCIe)" }
+    ]
+  },
+  {
+    "id": "NSto_NE003",
+    "name": "Thiết bị lưu trữ NAS Synology RS1221+",
+    "price": "42.990.000đ",
+    "image": "../../assets/img/product/NSto_NE003.jpg",
+    "tags": ["network-storage", "nas-enterprise"],
+    "detailedSpecs": [
+      { "label": "Kiểu dáng", "value": "Rackmount 2U (Chiều sâu ngắn, phù hợp tủ rack nhỏ)" },
+      { "label": "Vi xử lý (CPU)", "value": "AMD Ryzen V1500B Quad-core 2.2 GHz" },
+      { "label": "RAM", "value": "4 GB DDR4 ECC (Nâng cấp tối đa 32 GB)" },
+      { "label": "Số khay ổ cứng", "value": "8 Khay ổ cứng HDD/SSD" },
+      { "label": "Nâng cấp (PCIe)", "value": "1 khe cắm PCIe Gen3 x8 cho Card 10GbE hoặc M.2 SSD" }
+    ]
+  },
+  {
+    "id": "NSto_NE004",
+    "name": "Thiết bị lưu trữ NAS Synology DS2422+",
+    "price": "55.990.000đ",
+    "image": "../../assets/img/product/NSto_NE004.jpg",
+    "tags": ["network-storage","nas-enterprise"],
+    "detailedSpecs": [
+      { "label": "Kiểu dáng", "value": "Tower (Dạng tháp để bàn lớn)" },
+      { "label": "Vi xử lý (CPU)", "value": "AMD Ryzen V1500B Quad-core 2.2 GHz" },
+      { "label": "RAM", "value": "4 GB DDR4 ECC SO-DIMM (Max 32 GB)" },
+      { "label": "Số khay ổ cứng", "value": "12 Khay ổ cứng (Có thể mở rộng lên 24 khay với DX1222)" },
+      { "label": "Tốc độ đọc/ghi", "value": "Tuần tự lên đến 2,201 MB/s đọc và 1,383 MB/s ghi" }
+    ]
+  },
+  {
+    "id": "NSto_HD001",
+    "name": "Ổ Cứng HDD WD Red Plus 4TB 3.5 inch SATA iii WD40EFZX",
+    "price": "5.100.000đ",
+    "image": "../../assets/img/product/NSto_HD001.jpg",
+    "tags": ["network-storage","hard-drive"],
+    "detailedSpecs": [
+      { "label": "Dung lượng", "value": "4 TB" },
+      { "label": "Chuẩn giao tiếp", "value": "SATA III (6 Gb/s)" },
+      { "label": "Kích thước", "value": "3.5 inch" },
+      { "label": "Tốc độ vòng quay", "value": "5400 RPM" },
+      { "label": "Bộ nhớ đệm (Cache)", "value": "128 MB (Công nghệ CMR chuyên dụng cho NAS)" }
+    ]
+  },
+  {
+    "id": "NSto_HD002",
+    "name": "Ổ Cứng HDD Seagate Ironwolf 6TB 3.5 inch SATA iii ST6000VN006",
+    "price": "5.750.000đ",
+    "image": "../../assets/img/product/NSto_HD002.jpg",
+    "tags": ["network-storage","hard-drive"],
+    "detailedSpecs": [
+      { "label": "Dung lượng", "value": "6 TB" },
+      { "label": "Chuẩn giao tiếp", "value": "SATA III (6 Gb/s)" },
+      { "label": "Tốc độ vòng quay", "value": "5400 RPM" },
+      { "label": "Bộ nhớ đệm (Cache)", "value": "256 MB" },
+      { "label": "Đặc tính", "value": "Tối ưu cho hệ thống NAS 1-8 khay đĩa, hoạt động 24/7" }
+    ]
+  },
+  {
+    "id": "NSto_HD003",
+    "name": "Ổ cứng HDD Enterprise WD Gold 10TB 3.5 inch (WD102KRYZ)",
+    "price": "6.990.000đ",
+    "image": "../../assets/img/product/NSto_HD003.jpg",
+    "tags": ["network-storage","hard-drive"],
+    "detailedSpecs": [
+      { "label": "Dung lượng", "value": "10 TB" },
+      { "label": "Phân khúc", "value": "Enterprise (Cấp doanh nghiệp/Data Center)" },
+      { "label": "Tốc độ vòng quay", "value": "7200 RPM" },
+      { "label": "Bộ nhớ đệm (Cache)", "value": "256 MB" },
+      { "label": "Độ bền", "value": "Lên đến 2.5 triệu giờ MTBF, chịu tải 550TB/năm" }
+    ]
+  },
+  {
+    "id": "NSto_HD004",
+    "name": "Ổ Cứng HDD WD Ultrastar 4TB SATA iii 3.5 inch DC HC310",
+    "price": "5.400.000đ",
+    "image": "../../assets/img/product/NSto_HD004.jpg",
+    "tags": ["network-storage","hard-drive"],
+    "detailedSpecs": [
+      { "label": "Dung lượng", "value": "4 TB" },
+      { "label": "Phân khúc", "value": "Data Center/Doanh nghiệp" },
+      { "label": "Tốc độ vòng quay", "value": "7200 RPM" },
+      { "label": "Bộ nhớ đệm (Cache)", "value": "256 MB" },
+      { "label": "Công nghệ", "value": "Cảm biến chống rung xoay (RV sensors) giúp ổn định trong Server" }
+    ]
+  },
+  {
+    "id": "NSto_HD005",
+    "name": "Ổ Cứng HDD Ultrastar WUH721414AKE6L4 Dung lượng 18TB 3.5",
+    "price": "5.500.000đ",
+    "image": "../../assets/img/product/NSto_HD005.jpg",
+    "tags": ["network-storage","hard-drive"],
+    "detailedSpecs": [
+      { "label": "Dung lượng", "value": "18 TB" },
+      { "label": "Công nghệ lưu trữ", "value": "Khí Heli (HelioSeal) giúp giảm ma sát và tiêu thụ điện" },
+      { "label": "Tốc độ vòng quay", "value": "7200 RPM" },
+      { "label": "Bộ nhớ đệm (Cache)", "value": "512 MB" },
+      { "label": "Chuẩn giao tiếp", "value": "SATA III (6 Gb/s) CMR" }
+    ]
   }
 ]
