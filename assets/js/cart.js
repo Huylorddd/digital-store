@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const modalInstance = bootstrap.Modal.getInstance(authModalEl);
             modalInstance.hide();
 
-            // Cập nhật lại giao diện nút đăng nhập trên Navbar
+            // Reload lại trang
             location.reload();
         });
     }
@@ -116,3 +116,4 @@ window.removeItem = function (index) {
     localStorage.setItem('cart', JSON.stringify(cart));
     renderCart();
 }
+
