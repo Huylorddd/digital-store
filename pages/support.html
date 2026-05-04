@@ -252,18 +252,22 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label small fw-bold">Họ tên</label>
-                                    <input type="text" class="form-control" placeholder="Nguyễn Văn A">
+                                    <input type="text" id="supportName" class="form-control" placeholder="Nguyễn Văn A">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label small fw-bold">Email</label>
-                                    <input type="email" class="form-control" placeholder="email@gmail.com">
+                                    <input type="email" id="supportEmail" class="form-control" placeholder="email@gmail.com">
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label small fw-bold">Lời nhắn</label>
-                                    <textarea class="form-control" rows="4" placeholder="Chúng tôi có thể giúp gì cho bạn?"></textarea>
+                                    <textarea id="supportMessage" class="form-control" rows="4" placeholder="Chúng tôi có thể giúp gì cho bạn?"></textarea>
                                 </div>
+                                
+                                <!-- Vùng hiển thị lỗi hỗ trợ -->
+                                <div id="supportError" class="text-danger small ms-2" style="display: none;"></div>
+
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary px-5 py-2 fw-bold">GỬI NGAY</button>
+                                    <button type="submit" id="btnSupport" class="btn btn-primary px-5 py-2 fw-bold">GỬI NGAY</button>
                                 </div>
                             </div>
                         </form>

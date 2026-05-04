@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Biểu thức chính quy (Regex)
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; 
-    const nameRegex = /^(\p{Lu}\p{Ll}*\s?)+$/u;     // Lu : chữ hoa unicode, Ll: chữ thường unicod, Unicode hỗ trợ tên Việt
+    const nameRegex = /^[A-ZÀ-Ỹ][a-zà-ỹ]*(\s[A-ZÀ-Ỹ][a-zà-ỹ]*)*$/;
+                      
     const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/; 
     //const phoneRegex = /^(0|\\+84)[3|5|7|8|9][0-9]{8}$/;
     //const cccdRegex = /^[0-9]{12}$/;
@@ -109,6 +110,46 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('regName').value = '';
             document.getElementById('regEmail').value = '';
             document.getElementById('regPass').value = '';
+        });
+    }
+
+    // --- 4. KIỂM TRA DỮ LIỆU FORM HỖ TRỢ ---
+    const btnSupport = document.getElementById('btnSupport');
+    
+    if (btnSupport) {
+        btnSupport.addEventListener('click', function(e) {
+            e.preventDefault(); 
+
+            const errorDiv = document.getElementById('supportError');
+            errorDiv.style.display = 'none'; 
+
+            let name = document.getElementById('supportName').value.trim();
+            let email = document.getElementById('supportEmail').value.trim();
+            let message = document.getElementById('supportMessage').value.trim();
+
+            if (nameRegex.test(name) == false) {
+                errorDiv.innerText = "Họ tên phải viết hoa chữ cái đầu mỗi từ!";
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            if (emailRegex.test(email) == false) {
+                errorDiv.innerText = "Email không đúng định dạng!";
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            if (message.length < 10) {
+                errorDiv.innerText = "Lời nhắn quá ngắn, vui lòng nhập ít nhất 10 ký tự!";
+                errorDiv.style.display = 'block';
+                return;
+            }
+
+            alert("Yêu cầu của ông đã được gửi thành công! Chúng tôi sẽ phản hồi sớm.");
+            
+            document.getElementById('supportName').value = '';
+            document.getElementById('supportEmail').value = '';
+            document.getElementById('supportMessage').value = '';
         });
     }
 });
