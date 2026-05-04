@@ -1,7 +1,3 @@
-/**
- * Tệp: products.js
- * Nhiệm vụ: Tải dữ liệu JSON, lọc và hiển thị sản phẩm
- */
 
 // Khai báo biến toàn cục để lưu mảng sản phẩm (dùng chung cho các hàm bên dưới)
 let danhSachSanPham = []; 

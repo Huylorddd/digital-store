@@ -1,7 +1,3 @@
-/**
- * Tệp: main.js
- * Nhiệm vụ: Xử lý các tương tác UI dùng chung cho toàn bộ website (Header, Sidebar, Overlay, Modal...)
- */
 
 document.addEventListener("DOMContentLoaded", function () {
 
