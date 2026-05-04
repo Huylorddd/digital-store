@@ -1,6 +1,6 @@
 /**
  * Tệp: main.js
- * Nhiệm vụ: Xử lý các tương tác UI dùng chung cho toàn bộ website (Header, Sidebar, Overlay...)
+ * Nhiệm vụ: Xử lý các tương tác UI dùng chung cho toàn bộ website (Header, Sidebar, Overlay, Modal...)
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,19 +28,89 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- 2. XỬ LÝ MENU MOBILE & OVERLAY (Cho nút "Danh mục" ở các trang) ---
     const btnMenu = document.getElementById("btnMenu");
     const overlay = document.getElementById("overlay");
-    const mobileSidebar = document.getElementById("mobileSidebar"); // Trúng id này thì sidebar mới trượt ra
+    const mobileSidebar = document.getElementById("mobileSidebar"); 
 
-    // Kiểm tra xem các phần tử có tồn tại trên trang không để tránh lỗi
     if (btnMenu && overlay) {
         btnMenu.addEventListener("click", function () {
             overlay.classList.toggle("active");
             if (mobileSidebar) mobileSidebar.classList.toggle("active");
         });
 
-        // Click vào vùng tối để tắt cả menu và overlay
         overlay.addEventListener("click", function () {
             overlay.classList.remove("active");
             if (mobileSidebar) mobileSidebar.classList.remove("active");
+        });
+    }
+
+    // --- 3. KIỂM TRA DỮ LIỆU ĐĂNG NHẬP / ĐĂNG KÝ ---
+    
+    // Biểu thức chính quy (Regex)
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; 
+    const nameRegex = /^(\p{Lu}\p{Ll}*\s?)+$/u;     // Lu : chữ hoa unicode, Ll: chữ thường unicod, Unicode hỗ trợ tên Việt
+    const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/; 
+
+    // Xử lý Đăng nhập
+    const btnLogin = document.getElementById('btnLogin');
+    if (btnLogin) {
+        btnLogin.addEventListener('click', function(e) {
+            e.preventDefault(); 
+
+            document.getElementById('loginError').style.display = 'none';
+
+            let email = document.getElementById('loginEmail').value.trim();
+            let pass = document.getElementById('loginPass').value;
+
+            if (emailRegex.test(email) == false) {
+                document.getElementById('loginError').innerText = "Email không đúng định dạng!";
+                document.getElementById('loginError').style.display = 'block';
+                return; 
+            }
+            if (pass === '') {
+                document.getElementById('loginError').innerText = "Vui lòng nhập mật khẩu!";
+                document.getElementById('loginError').style.display = 'block';
+                return;
+            }
+
+            alert("Đăng nhập thành công!");
+            document.querySelector('#authModal .btn-close').click();
+        });
+    }
+
+    // Xử lý Đăng ký
+    const btnSignup = document.getElementById('btnSignup');
+    if (btnSignup) {
+        btnSignup.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.getElementById('signupError').style.display = 'none';
+
+            let name = document.getElementById('regName').value.trim();
+            let email = document.getElementById('regEmail').value.trim();
+            let pass = document.getElementById('regPass').value;
+
+            if (nameRegex.test(name) == false) {
+                document.getElementById('signupError').innerText = "Họ tên chỉ được chứa chữ cái!";
+                document.getElementById('signupError').style.display = 'block';
+                return;
+            }
+            if (emailRegex.test(email) == false) {
+                document.getElementById('signupError').innerText = "Email không đúng định dạng!";
+                document.getElementById('signupError').style.display = 'block';
+                return;
+            }
+            if (passRegex.test(pass) == false) {
+                document.getElementById('signupError').innerText = "Mật khẩu phải từ 8 ký tự, gồm chữ hoa, chữ thường và số!";
+                document.getElementById('signupError').style.display = 'block';
+                return;
+            }
+
+            alert("Đăng ký thành công!");
+            
+            document.querySelector('#authModal .btn-close').click();
+
+            document.getElementById('regName').value = '';
+            document.getElementById('regEmail').value = '';
+            document.getElementById('regPass').value = '';
         });
     }
 });

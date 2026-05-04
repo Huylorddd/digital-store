@@ -48,13 +48,15 @@
                         <form>
                             <div class="mb-3">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Nhập email">
+                                <input type="email" id="loginEmail" class="form-control" placeholder="Nhập email">
                             </div>
                             <div class="mb-3">
                                 <label>Mật khẩu</label>
-                                <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                <input type="password" id="loginPass" class="form-control" placeholder="Nhập mật khẩu">
                             </div>
-                            <button class="btn btn-primary w-100">Đăng nhập</button>
+                            
+                            <div id="loginError" class="text-danger small mb-2" style="display: none;"></div>
+                            <button id="btnLogin" class="btn btn-primary w-100">Đăng nhập</button>
                         </form>
                     </div>
 
@@ -63,17 +65,19 @@
                         <form>
                             <div class="mb-3">
                                 <label>Họ tên</label>
-                                <input type="text" class="form-control" placeholder="Nhập họ tên">
+                                <input type="text" id="regName" class="form-control" placeholder="Nhập họ tên">
                             </div>
                             <div class="mb-3">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Nhập email">
+                                <input type="email" id="regEmail" class="form-control" placeholder="Nhập email">
                             </div>
                             <div class="mb-3">
                                 <label>Mật khẩu</label>
-                                <input type="password" class="form-control" placeholder="Tạo mật khẩu">
+                                <input type="password" id="regPass" class="form-control" placeholder="Tạo mật khẩu">
                             </div>
-                            <button class="btn btn-success w-100">Đăng ký</button>
+                            
+                            <div id="signupError" class="text-danger small mb-2" style="display: none;"></div>
+                            <button id="btnSignup" class="btn btn-success w-100">Đăng ký</button>
                         </form>
                     </div>
 
